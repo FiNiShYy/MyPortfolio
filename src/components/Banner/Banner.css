@@ -2,8 +2,8 @@
 .banner {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../assets/bannerbackground.png);
     background-size: cover;
-    background-position: center 600px;
-    height: 60vh;
+    background-position: center 700px;
+    height: 70vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,7 +25,7 @@
 }
 
 .about h2 {
-    font-size: 18px;
-    text-align: justify;
+    font-size: 30px;
+    text-align: center;
     width: 500px;
 }

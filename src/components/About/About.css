@@ -1,0 +1,31 @@
+.img-about {
+    display: flex;
+    flex-direction: row;
+    height: 60vh;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 200px;
+}
+
+.img-about img {
+    height: 40vh;
+    border-radius: 10px;
+    margin-left: 50px;
+}
+
+.about-text {
+    width: 30vw;
+    text-align: left;
+    color: rgb(214, 214, 214);
+}
+
+.about-text h1{
+    text-align: left;
+    color: rgb(14, 153, 4);
+    font-weight: 500;
+    font-size: 50px;
+}
+
+.about-text h2{
+    font-weight: 300;
+}
