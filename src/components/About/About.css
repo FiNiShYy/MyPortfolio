@@ -19,8 +19,14 @@
     color: rgb(214, 214, 214);
 }
 
-.about img {
-    width: 30px;
+.contact-logo {
+    display: flex;
+    gap: 50px;
+}
+
+.contact-logo img {
+    width: 35px;
+
 }
 
 .about-text h1{
