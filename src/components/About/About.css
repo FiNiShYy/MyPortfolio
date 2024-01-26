@@ -15,13 +15,13 @@
 
 .about-text {
     width: 30vw;
-    text-align: left;
+    text-align: justify;
     color: rgb(214, 214, 214);
 }
 
 .about-text h1{
     text-align: left;
-    color: rgb(14, 153, 4);
+    color: rgb(226, 226, 226);
     font-weight: 500;
     font-size: 50px;
 }
