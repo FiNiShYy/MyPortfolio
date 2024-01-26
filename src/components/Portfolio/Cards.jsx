@@ -9,10 +9,8 @@ const Cards = ({ titulo, description, imageUrl, link, tag }) => {
             </div>
             <div className='card-text'>
                 <h2 className='card-title'>{titulo}</h2>
-                <p className='card-description'>{description}</p>
-                <a className='card-button' href={link} target='_blank' rel='noopener noreferrer'> + Detalhes</a>
+                <a className='card-button' href={link} target='_blank' rel='noopener noreferrer'> Mais detalhes</a>
             </div>
-
         </div>
     )
 }
