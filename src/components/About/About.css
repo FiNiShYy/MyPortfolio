@@ -19,6 +19,10 @@
     color: rgb(214, 214, 214);
 }
 
+.about img {
+    width: 30px;
+}
+
 .about-text h1{
     text-align: left;
     color: rgb(226, 226, 226);
