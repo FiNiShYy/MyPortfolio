@@ -3,6 +3,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 30px;
+    row-gap: 30px;
     padding:20px;
 }
 
@@ -15,42 +16,38 @@
 }
 
 .card-container {
-    width: 20vw;
-    border-radius: 10px;
-    background-image: linear-gradient( 179deg,  rgba(0,0,0,1) 9.2%, rgba(127,16,16,1) 103.9% );
-    height: auto;
+    width: 380px;
+    border-radius: 12px;
+    background-image: url(../../assets/desktop-wallpaper-green-hq-dark-green-minimalist.jpg);
     display: flex;
     justify-content: center;
     flex-direction: column;
-    gap: 10px;
     position: relative;
 }
 
 .container-img {
     display: flex;
-    height: 50%;
-    align-items: center;
+    height: 280px;
 }
 
 .image-card {
     display: flex;
     width: 100%;
     height: 100%;
-    border-radius: 10px 10px 0px 0px;
+    border-radius: 12px 12px 0px 0px;
 }
 
 .card-text {
-    height: 50%;
+    height: 170px;
     display: flex;
     flex-direction: column;
 }
 
 .card-title {
     display: flex;
-    align-items: center;
     padding-left: 10px;
     color:#eee;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .card-description {
