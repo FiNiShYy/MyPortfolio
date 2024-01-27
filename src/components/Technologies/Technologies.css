@@ -13,8 +13,8 @@
 
 .technologies-card {
     display: flex;
-    width: 600px;
-    height: 150px;
+    width: 700px;
+    height: 200px;
     border-radius: 25px;
     justify-content: space-around;
     flex-direction: row;
@@ -24,5 +24,10 @@
 }
 
 .technologies-card img{
-    width: 80px;
+    width: 90px;
+    transition: 0.5s;
+}
+
+.technologies-card img:hover {
+    transform: scale(1.1);
 }
