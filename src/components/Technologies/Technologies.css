@@ -1,0 +1,28 @@
+.technologies-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.technologies-area h1 {
+    font-size: 50px;
+    font-weight: 500;
+    color: #e2e2e2;
+}
+
+.technologies-card {
+    display: flex;
+    width: 600px;
+    height: 150px;
+    border-radius: 25px;
+    justify-content: space-around;
+    flex-direction: row;
+    background-image: url('../../assets/rm314-bb-18.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.technologies-card img{
+    width: 80px;
+}
