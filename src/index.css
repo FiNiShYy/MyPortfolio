@@ -10,6 +10,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: rgb(18, 18, 18);
   overflow-x: hidden;
+  background-image: url(/src/assets/bg-texture.png);
 }
 
 
