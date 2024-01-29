@@ -22,7 +22,7 @@ const Header = () => {
     }, []);
     return (
         <div className="header-menu">
-            <a href="#about" >SOBRE</a>
+            <a href="#about">SOBRE</a>
             <a href="#projects">PROJETOS</a>
             <a href="#skills">SKILLS</a>
         </div>
