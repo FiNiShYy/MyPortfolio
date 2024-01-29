@@ -3,7 +3,7 @@ import PFPKaua from '../../assets/PFPKaua.jpeg'
 
 const About = () => {
     return (
-        <div className="img-about">
+        <div className="img-about" id="about">
             <img src={PFPKaua}></img>
             <div className="about-text">
                 <h1>SOBRE MIM</h1>

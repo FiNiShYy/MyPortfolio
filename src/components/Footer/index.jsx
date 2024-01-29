@@ -8,7 +8,7 @@ const Footer = () => {
     }, [])
     return (
         <div className='footer'>
-            <h1>Copyright © <span id="year"></span> Kauã Gabriel. Todos os direitos reservados</h1>
+            <h1>Todos os direitos reservados © Kauã Gabriel <span id="year"></span></h1>
         </div>
     )
 }
