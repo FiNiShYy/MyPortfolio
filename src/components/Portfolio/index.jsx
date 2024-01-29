@@ -5,7 +5,7 @@ import './Portfolio.css';
 
 const Portfolio = () => {
         return (
-        <div className='portfolio-section'>
+        <div id='projects' className='portfolio-section'>
             <h1>PROJETOS RECENTES</h1>
         <div className='card-section'>  
         <Cards
