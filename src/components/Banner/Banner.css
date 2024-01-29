@@ -29,3 +29,11 @@
     text-align: center;
     width: 500px;
 }
+
+.contact-logo img {
+    transition: 0.7s;
+}
+
+.contact-logo img:hover {
+    transform: scale(1.2);
+}
