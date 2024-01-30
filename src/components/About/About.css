@@ -110,3 +110,16 @@
     padding-bottom: 20px;
 }
 }
+
+@media (max-width: 600px) {
+
+.about-text h1{
+    font-size: 30px;
+    width: 200px;
+}
+
+.about-text h2 {
+    font-size: 18px;
+}
+
+}

@@ -31,3 +31,53 @@
 .technologies-card img:hover {
     transform: scale(1.1);
 }
+
+@media (max-width: 860px) {
+
+.technologies-area h1{
+    font-size: 40px;
+}
+
+.technologies-card {
+    width: 500px;
+    height: 180px;
+} 
+
+.technologies-card img{
+    width: 55px;
+}
+
+}
+
+@media (max-width: 600px) {
+
+.technologies-area h1{
+    font-size: 30px;
+}
+
+.technologies-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: center;
+    width: 400px;
+    height: 170px;
+} 
+
+.technologies-card img{
+    width: 40px;
+}
+
+}
+
+@media (max-width: 500px) {
+
+.technologies-card {
+    grid-template-columns: repeat(2, 1fr);
+    width: 200px;
+    height: 300px;
+}
+
+}
