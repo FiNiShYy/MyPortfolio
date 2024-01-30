@@ -123,3 +123,29 @@
 }
 
 }
+
+@media (max-width: 500px) {
+
+.contact-logo img {
+    width: 30px;
+}
+
+}
+
+@media (max-width: 450px) {
+
+.img-about img {
+    height: 23vh;
+}
+
+.about-text h2{
+    font-size: 16px;
+}
+}
+
+@media (max-width: 360px) {
+
+.contact-logo img {
+    width: 20px;
+}
+}

@@ -34,3 +34,11 @@
 }
 
 }
+
+@media (max-width: 360px) {
+
+    .footer h1{
+        font-size: 12px;
+    }
+    
+    }
