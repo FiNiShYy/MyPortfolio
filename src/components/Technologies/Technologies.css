@@ -18,9 +18,6 @@
     border-radius: 25px;
     justify-content: space-around;
     flex-direction: row;
-    background-image: url('../../assets/rm314-bb-18.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .technologies-card img{
