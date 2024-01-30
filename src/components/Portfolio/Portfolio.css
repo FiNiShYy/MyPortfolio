@@ -81,3 +81,22 @@
     cursor: pointer;
     text-decoration: none;
 }
+
+@media (max-width: 1300px) {
+
+.card-section {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+}
+
+@media (max-width: 860px) {
+
+.card-section {
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.portfolio-section h1{
+    font-size: 40px;
+}
+}
