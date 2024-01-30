@@ -145,7 +145,7 @@
 
 @media (max-width: 360px) {
 
-.contact-logo img {
-    width: 20px;
+.contact-logo {
+    gap: 25px;
 }
 }
