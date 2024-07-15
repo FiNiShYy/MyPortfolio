@@ -4,6 +4,8 @@ import PortalSalt from '../../assets/PortalSalt.png';
 import EletroSaoJose from '../../assets/EletroSaoJoseProject.png'
 import SaltHTML from '../../assets/SaltHTML.png'
 import Organo from '../../assets/OrganoProject.png'
+import Confeacc from '../../assets/confeacc.png'
+import FazCredito from '../../assets/fazcredito.png'
 import './Portfolio.css';
 
 const Portfolio = () => {
@@ -34,6 +36,18 @@ const Portfolio = () => {
                 imageUrl={Organo}
                 titulo='Organo project made with Alura'
                 link="https://organo-react-beta-one.vercel.app/"
+        />
+        <Cards
+                className='cards'
+                imageUrl={Confeacc}
+                titulo='CONFEACC'
+                link="https://confeacc.com.br"
+        />
+        <Cards
+                className='cards'
+                imageUrl={FazCredito}
+                titulo='Faz Crédito'
+                link="https://fazcredito.com.br"
         />
         </div>
         </div>
