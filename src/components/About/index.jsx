@@ -1,5 +1,5 @@
 import "./About.css"
-import PFPKaua from '../../assets/PFPKaua.jpeg'
+import PFPKaua from '../../assets/ImagePresentation.jpg'
 
 const About = () => {
     return (
