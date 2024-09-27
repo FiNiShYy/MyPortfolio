@@ -4,7 +4,6 @@ import React, { useEffect } from 'react'
 const Header = () => {
     useEffect(() => {
         const internalLinks = document.querySelectorAll('a[href^="#"]');
-        const trackingMato = document.getElementById("trackingMato");
         
         internalLinks.forEach(link => {
             link.addEventListener("click", function (e) {
@@ -20,14 +19,6 @@ const Header = () => {
                 }
             });
         });
-            trackingMato.addEventListener("click", function () {
-              window._paq.push([
-                "trackEvent",
-                "Menu",
-                "Click",
-                "Sobre",
-              ]);
-            });
     }, []);
     return (
         <div className="header-menu">
