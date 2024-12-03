@@ -8,10 +8,10 @@ import Confeacc from '../../assets/confeacc.png'
 import FazCredito from '../../assets/fazcredito.png'
 import './Portfolio.css';
 
-const Portfolio = () => {
+const Portfolio = ({isEnglish}) => {
         return (
         <div id='projects' className='portfolio-section'>
-            <h1>PROJETOS RECENTES</h1>
+            <h1>{isEnglish ? "RECENT PROJECTS" : "PROJETOS RECENTES"}</h1>
         <div className='card-section'>  
         <Cards
                 className='cards'

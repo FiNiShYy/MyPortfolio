@@ -12,7 +12,34 @@
     color: white;
     font-weight: 500;
     text-decoration: none;
+    transition: opacity 0.3s ease;
+    opacity: 1;
 }
+
+.header-menu a.hidden {
+    opacity: 0;
+}
+
+.translate-button {
+    position: absolute;
+    left: 95%;
+    top: 50%;
+}
+
+.translate-button img {
+    width: 35px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.translate-button img:hover {
+    transform: scale(1.1)
+}
+
+.translate-button img:active {
+    transform: scale(0.9); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
 
 @media (max-width: 500px) {
 
