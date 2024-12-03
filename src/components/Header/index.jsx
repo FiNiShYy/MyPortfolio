@@ -1,7 +1,11 @@
 import "./Header.css"
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
+import translateIcon from "../../assets/translate.png"
 
-const Header = () => {
+
+const Header = ({ isEnglish, toggleLanguage }) => {
+
+
     useEffect(() => {
         const internalLinks = document.querySelectorAll('a[href^="#"]');
         
@@ -20,11 +24,15 @@ const Header = () => {
             });
         });
     }, []);
+    
     return (
         <div className="header-menu">
-            <a id="trackingMato" href="#about">SOBRE</a>
-            <a href="#projects">PROJETOS</a>
-            <a href="#skills">SKILLS</a>
+            <a href="#about">{isEnglish ? "ABOUT" : "SOBRE"}</a>
+            <a href="#projects">{isEnglish ? "PROJECTS" : "PROJETOS"}</a>
+            <a href="#skills">{isEnglish ? "SKILLS" : "HABILIDADES"}</a>
+            <div className="translate-button" onClick={toggleLanguage}>
+            <img src={translateIcon} alt="translate icon"/>
+            </div>
         </div>
     )
 }
