@@ -18,36 +18,42 @@ const Portfolio = ({isEnglish}) => {
                 imageUrl={PortalSalt}
                 titulo='Portal Salt Systems'
                 link="https://saltsystems.com.br/"
+                isEnglish={isEnglish}
         />
         <Cards
                 className='cards'
                 imageUrl={EletroSaoJose}
                 titulo='Eletro São José Landing Page'
                 link="https://finishyy.github.io/meu-site/"
+                isEnglish={isEnglish}
         />
         <Cards
                 className='cards'
                 imageUrl={SaltHTML}
                 titulo='Portal Salt Systems (HTML version)'
                 link="https://portal-salt.vercel.app/"
+                isEnglish={isEnglish}
         />
         <Cards
                 className='cards'
                 imageUrl={Organo}
                 titulo='Organo project made with Alura'
                 link="https://organo-react-beta-one.vercel.app/"
+                isEnglish={isEnglish}
         />
         <Cards
                 className='cards'
                 imageUrl={Confeacc}
                 titulo='CONFEACC'
                 link="https://confeacc.com.br"
+                isEnglish={isEnglish}
         />
         <Cards
                 className='cards'
                 imageUrl={FazCredito}
                 titulo='Faz Crédito'
                 link="https://fazcredito.com.br"
+                isEnglish={isEnglish}
         />
         </div>
         </div>

@@ -12,7 +12,7 @@ const Banner = ({isEnglish}) => {
                 <h1>KAUÃ GABRIEL</h1>
                 <h2>{isEnglish ? "Developer" : "Desenvolvedor"}</h2>
             <div className='contact-logo'>
-                <a target='_blank' className='contact-logo' href='https://www.linkedin.com/in/kau%C3%A3-gabriel-821996212/'>
+                <a target='_blank' className='contact-logo' href='https://www.linkedin.com/in/kauagabriell//'>
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" />
                 </a>
                 <a target='_blank' className='contact-logo' href='https://github.com/FiNiShYy'>
