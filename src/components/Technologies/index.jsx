@@ -1,17 +1,47 @@
 import './Technologies.css'
 
-const Technologies = ({isEnglish}) => {
+const Technologies = ({ isEnglish }) => {
     return (
         <div id='skills' className='technologies-area'>
             <h1>{isEnglish ? "TECHNOLOGIES" : "TECNOLOGIAS"}</h1>
-            <div className='technologies-card'>
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="html5-logo" srcSet="" />
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="css-logo" srcSet="" />
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="javascript-logo" srcSet="" />
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="react-logo" srcSet="" />
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="figma-logo" srcSet="" />
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="figma-logo" srcSet="" />
-            </div>
+            <ul>
+                <li className='column'>
+                    <a href="#">
+                        <i className="fab fa-html5"></i>
+                        <span>HTML5</span>
+                    </a>
+                </li>
+                <li className='column'>
+                    <a href="#">
+                        <i className="fab fa-css3"></i>
+                        <span>CSS3</span>
+                    </a>
+                </li>
+                <li className='column'>
+                    <a href="#">
+                        <i className="fab fa-js"></i>
+                        <span>JavaScript</span>
+                    </a>
+                </li>
+                <li className='column'>
+                    <a href="#">
+                        <i className="fab fa-react"></i>
+                        <span>React.Js</span>
+                    </a>
+                </li>
+                <li className='column'>
+                    <a href="#">
+                        <i className="fab fa-figma"></i>
+                        <span>Figma</span>
+                    </a>
+                </li>
+                <li className='column'>
+                    <a href="#">
+                        <i className="fab fa-node"></i>
+                        <span>Node</span>
+                    </a>
+                </li>
+            </ul>
         </div>
     )
 }
