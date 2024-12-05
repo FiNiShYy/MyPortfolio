@@ -41,10 +41,20 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   }
 
-@media (max-width: 500px) {
-
-.header-menu a{
-    font-size: 15px;
+@media (max-width: 840px) {
+    .translate-button {
+        left: 85%;
+        top: 50%;
+    }
 }
 
+@media (max-width: 500px) {
+
+    .header-menu a{
+        font-size: 15px;
+    }
+
+    .translate-button img {
+        width: 30px;
+    }
 }
