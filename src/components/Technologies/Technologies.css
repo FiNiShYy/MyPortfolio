@@ -34,7 +34,7 @@ ul li a {
     font-size: 50px;
     color: #666;
     transition: .5s;
-    cursor: default;
+    cursor: pointer;
 }
 
 ul li a::before {
@@ -102,7 +102,7 @@ ul li span::after {
     height: 14px;
     width: 14px;
     position: absolute;
-    transition: all .35s ease;
+    transition: all 1s ease;
     opacity: 0;
 }
 
