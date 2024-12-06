@@ -129,16 +129,28 @@ ul li a:hover span::after {
     opacity: 1;
 }
 
+@media (max-width: 780px) {
+
+    .technologies-area {
+        padding: 0 40px;
+    }
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 80px 20px;
+        justify-content: center;
+    }
+    }
+
 @media (max-width: 600px) {
 .technologies-area h1 {
     font-size: 30px;
 }
 }
 
-@media (max-width: 500px) {
-.technologies-card {
-    grid-template-columns: repeat(2, 1fr);
-    width: 200px;
-    height: 300px;
+@media (max-width: 400px) {
+.technologies-area {
+    height: 465px;
 }
 }
