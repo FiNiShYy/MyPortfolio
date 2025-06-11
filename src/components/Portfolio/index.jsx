@@ -6,13 +6,35 @@ import SaltHTML from '../../assets/SaltHTML.png'
 import Organo from '../../assets/OrganoProject.png'
 import Confeacc from '../../assets/confeacc.png'
 import FazCredito from '../../assets/fazcredito.png'
+import FCIViagens from '../../assets/FCIViagens.png'
 import './Portfolio.css';
 
 const Portfolio = ({isEnglish}) => {
         return (
         <div id='projects' className='portfolio-section'>
-            <h1>{isEnglish ? "RECENT PROJECTS" : "PROJETOS RECENTES"}</h1>
+                <h1>{isEnglish ? "RECENT PROJECTS" : "PROJETOS RECENTES"}</h1>
         <div className='card-section'>  
+        <Cards
+                className='cards'
+                imageUrl={FCIViagens}
+                titulo='FCI Viagens'
+                link="https://fciviagens.com.br"
+                isEnglish={isEnglish}
+        />
+        <Cards
+                className='cards'
+                imageUrl={Confeacc}
+                titulo='CONFEACC'
+                link="https://confeacc.com.br"
+                isEnglish={isEnglish}
+        />
+        <Cards
+                className='cards'
+                imageUrl={FazCredito}
+                titulo='Faz Crédito'
+                link="https://fazcredito.com.br"
+                isEnglish={isEnglish}
+        />
         <Cards
                 className='cards'
                 imageUrl={PortalSalt}
@@ -39,20 +61,6 @@ const Portfolio = ({isEnglish}) => {
                 imageUrl={Organo}
                 titulo='Organo project made with Alura'
                 link="https://organo-react-beta-one.vercel.app/"
-                isEnglish={isEnglish}
-        />
-        <Cards
-                className='cards'
-                imageUrl={Confeacc}
-                titulo='CONFEACC'
-                link="https://confeacc.com.br"
-                isEnglish={isEnglish}
-        />
-        <Cards
-                className='cards'
-                imageUrl={FazCredito}
-                titulo='Faz Crédito'
-                link="https://fazcredito.com.br"
                 isEnglish={isEnglish}
         />
         </div>
