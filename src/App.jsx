@@ -6,6 +6,7 @@ import Projetos from "./components/Projetos";
 import Jornada from "./components/Jornada";
 import Inspiracoes from "./components/Inspiracoes";
 import ForaDoCodigo from "./components/ForaDoCodigo";
+import Blog from "./components/Blog";
 import Contato from "./components/Contato";
 import Rodape from "./components/Rodape";
 
@@ -20,6 +21,7 @@ const App = () => (
       <Jornada />
       <Inspiracoes />
       <ForaDoCodigo />
+      <Blog />
       <Contato />
     </main>
     <Rodape />

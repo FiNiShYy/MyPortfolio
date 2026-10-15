@@ -9,7 +9,7 @@ import { aoClicarAncora } from "../../utils/rolarPara";
 import { Botao } from "../ui";
 import * as S from "./styles";
 
-const SECOES = ["stack", "construo", "projetos", "jornada", "contato"];
+const SECOES = ["stack", "construo", "projetos", "jornada", "blog", "contato"];
 
 const Cabecalho = () => {
   const { t, i18n } = useTranslation();

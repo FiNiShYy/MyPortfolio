@@ -326,6 +326,32 @@
       "legenda": "Autorretrato: eu, um erro na tela e o gato de supervisor."
     }
   },
+  "blog": {
+    "titulo": "Blog",
+    "sub": "Opiniões, aprendizados e ideias soltas sobre tecnologia, IA, carreira e o que mais aparecer pelo caminho.",
+    "estado": "em breve",
+    "destaqueTitulo": "Em surgimento",
+    "destaqueTexto": "Os primeiros textos ainda estão no forno. Em breve, opiniões sem filtro, aqui mesmo.",
+    "terminal": [
+      {
+        "tipo": "cmd",
+        "texto": "ls posts/"
+      },
+      {
+        "tipo": "saida",
+        "texto": "total 0"
+      },
+      {
+        "tipo": "cmd",
+        "texto": "git status"
+      },
+      {
+        "tipo": "ok",
+        "texto": "● rascunhos em andamento"
+      }
+    ],
+    "rascunho": "rascunho"
+  },
   "contato": {
     "titulo": "Vamos conversar",
     "sub": "Cada canal mostra um lado diferente meu. Escolha o que for melhor pra você.",
