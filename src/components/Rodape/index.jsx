@@ -31,6 +31,57 @@ const Feito = styled.span`
   }
 `;
 
+// Easter egg: nenhuma pista visual; o balão com a "saudade" só aparece ao passar
+// o mouse (ou focar pelo teclado) na palavra "Claude".
+const Segredo = styled.span`
+  position: relative;
+  border-radius: 4px;
+  outline: none;
+  transition: color 0.2s ease;
+
+  .balao {
+    position: absolute;
+    right: 0;
+    bottom: calc(100% + 0.6rem);
+    z-index: 5;
+    width: max-content;
+    max-width: min(18rem, 80vw);
+    padding: 0.6rem 0.85rem;
+    border-radius: 0.75rem;
+    background: var(--tinta-escura);
+    color: var(--sobre-tinta);
+    font-family: var(--fonte-mono);
+    font-size: 0.8125rem;
+    line-height: 1.5;
+    text-align: left;
+    box-shadow: var(--sombra);
+    opacity: 0;
+    transform: translateY(6px);
+    pointer-events: none;
+    transition:
+      opacity 0.25s ease,
+      transform 0.25s ease;
+  }
+
+  &:hover,
+  &:focus-visible {
+    color: var(--violeta-forte);
+  }
+
+  &:hover .balao,
+  &:focus-visible .balao {
+    opacity: 1;
+    transform: none;
+  }
+
+  @media (max-width: 720px) {
+    .balao {
+      right: auto;
+      left: 0;
+    }
+  }
+`;
+
 const Atualizacao = styled.span`
   flex-basis: 100%;
   font-family: var(--fonte-mono);
@@ -54,7 +105,16 @@ const Rodape = () => {
   return (
     <Container>
       <span>{t("rodape.direitos", { ano: new Date().getFullYear() })}</span>
-      <Feito>{t("rodape.feito")}</Feito>
+      <Feito>
+        {t("rodape.feito")}{" "}
+        <Segredo tabIndex={0}>
+          Claude
+          <span className="balao" role="tooltip">
+            {t("rodape.saudade")}
+          </span>
+        </Segredo>
+        .
+      </Feito>
       <Atualizacao>{t("rodape.atualizado", { data })}</Atualizacao>
     </Container>
   );

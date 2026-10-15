@@ -30,9 +30,10 @@
     "sigla": "PT"
   },
   "rodape": {
-    "feito": "Built with React, styled-components and help from Claude — missing the good old days of writing every line by hand.",
+    "feito": "Built with React, styled-components and help from",
     "direitos": "© {{ano}} Kauã Gabriel",
-    "atualizado": "Last updated on {{data}}"
+    "atualizado": "Last updated on {{data}}",
+    "saudade": "Missing the good old days of writing every line by hand."
   },
   "curriculoArquivo": "/resume-kaua-gabriel.pdf",
   "acessibilidade": {

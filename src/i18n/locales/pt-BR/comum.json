@@ -30,9 +30,10 @@
     "sigla": "EN"
   },
   "rodape": {
-    "feito": "Feito com React, styled-components e a ajuda do Claude — saudade dos bons e velhos tempos de escrever cada linha na mão.",
+    "feito": "Feito com React, styled-components e a ajuda do",
     "direitos": "© {{ano}} Kauã Gabriel",
-    "atualizado": "Última atualização em {{data}}"
+    "atualizado": "Última atualização em {{data}}",
+    "saudade": "Saudade dos bons e velhos tempos de escrever cada linha na mão."
   },
   "curriculoArquivo": "/curriculo-kaua-gabriel.pdf",
   "acessibilidade": {
