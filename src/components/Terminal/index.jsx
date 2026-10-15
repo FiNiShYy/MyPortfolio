@@ -1,20 +1,19 @@
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 
+import { animacoesPausadas, usePreferencias } from "../../acessibilidade/preferencias";
 import * as S from "./styles";
 
 const VELOCIDADE_DIGITACAO = 45;
 const PAUSA_SAIDA = 140;
 const PAUSA_APOS_CMD = 380;
 
-function preferePoucoMovimento() {
-  return window.matchMedia?.("(prefers-reduced-motion: reduce)").matches;
-}
-
 // Comandos são "digitados" caractere a caractere; saídas aparecem inteiras.
-// Quem pede menos movimento vê o terminal completo de cara.
+// Quem pede menos movimento (sistema ou painel de acessibilidade) vê o
+// terminal completo de cara.
 const Terminal = () => {
   const { t, i18n } = useTranslation("conteudo");
+  const { semAnimacao } = usePreferencias();
   const linhas = t("terminal.linhas", { returnObjects: true });
 
   const [linhaAtual, setLinhaAtual] = useState(0);
@@ -22,13 +21,18 @@ const Terminal = () => {
 
   // Recomeça a animação quando o idioma muda.
   useEffect(() => {
-    if (preferePoucoMovimento()) {
+    if (animacoesPausadas()) {
       setLinhaAtual(linhas.length);
       return;
     }
     setLinhaAtual(0);
     setCaracteres(0);
   }, [i18n.language, linhas.length]);
+
+  // Ligar "pausar animações" no meio da digitação completa o terminal na hora.
+  useEffect(() => {
+    if (semAnimacao) setLinhaAtual(linhas.length);
+  }, [semAnimacao, linhas.length]);
 
   useEffect(() => {
     if (linhaAtual >= linhas.length) return undefined;

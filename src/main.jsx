@@ -8,11 +8,13 @@ import "@fontsource-variable/jetbrains-mono";
 
 import "./i18n";
 import { GlobalStyle } from "./styles/globalStyle";
+import { EstilosAcessibilidade } from "./acessibilidade/estilos";
 import App from "./App";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <GlobalStyle />
+    <EstilosAcessibilidade />
     <BrowserRouter>
       <App />
     </BrowserRouter>
