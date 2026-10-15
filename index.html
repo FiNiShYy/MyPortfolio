@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kauã Gabriel · Desenvolvedor full stack</title>
+    <meta
+      name="description"
+      content="Kauã Gabriel, desenvolvedor full stack em Maringá/PR. APIs, integrações financeiras e agentes de IA com React, Node.js, MongoDB e Claude API."
+    />
+    <meta name="author" content="Kauã Gabriel" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <link rel="canonical" href="https://my-portfolio-kaua.vercel.app/" />
+    <link rel="alternate" type="text/markdown" title="Resumo para IA" href="/llms.txt" />
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+
+    <meta name="theme-color" content="#f8f7fc" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#16131f" media="(prefers-color-scheme: dark)" />
+
+    <meta property="og:type" content="profile" />
+    <meta property="og:site_name" content="Kauã Gabriel" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta property="og:url" content="https://my-portfolio-kaua.vercel.app/" />
+    <meta property="og:title" content="Kauã Gabriel · Desenvolvedor full stack" />
+    <meta
+      property="og:description"
+      content="APIs, integrações financeiras e agentes de IA para fintechs de crédito e cobrança."
+    />
+    <meta property="og:image" content="https://my-portfolio-kaua.vercel.app/kaua.jpeg" />
+    <meta property="profile:first_name" content="Kauã" />
+    <meta property="profile:last_name" content="Gabriel" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Kauã Gabriel · Desenvolvedor full stack" />
+    <meta
+      name="twitter:description"
+      content="APIs, integrações financeiras e agentes de IA para fintechs de crédito e cobrança."
+    />
+    <meta name="twitter:image" content="https://my-portfolio-kaua.vercel.app/kaua.jpeg" />
+
+    <link rel="icon" href="/favicon.ico" />
+
+    <!-- Dados estruturados: ajudam buscadores e assistentes de IA a entender quem é a pessoa. -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfilePage",
+        "url": "https://my-portfolio-kaua.vercel.app/",
+        "inLanguage": ["pt-BR", "en"],
+        "mainEntity": {
+          "@type": "Person",
+          "name": "Kauã Gabriel",
+          "url": "https://my-portfolio-kaua.vercel.app/",
+          "image": "https://my-portfolio-kaua.vercel.app/kaua.jpeg",
+          "jobTitle": "Desenvolvedor Full Stack",
+          "description": "Desenvolvedor full stack que constrói APIs, integrações financeiras e agentes de IA para fintechs de crédito e cobrança.",
+          "email": "mailto:kauagabrielramkg@gmail.com",
+          "worksFor": { "@type": "Organization", "name": "Salt Systems", "url": "https://saltsystems.com.br/" },
+          "alumniOf": { "@type": "CollegeOrUniversity", "name": "UniCesumar" },
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Maringá",
+            "addressRegion": "PR",
+            "addressCountry": "BR"
+          },
+          "knowsLanguage": ["pt-BR", "en"],
+          "knowsAbout": [
+            "React", "TypeScript", "Node.js", "Express", "styled-components", "MongoDB", "Redis",
+            "Claude API", "Model Context Protocol", "AI agents", "LiveKit", "WebRTC", "Docker", "AWS",
+            "Playwright", "Vitest", "Fintech integrations"
+          ],
+          "sameAs": [
+            "https://www.linkedin.com/in/kauagabriell/",
+            "https://github.com/FiNiShYy",
+            "https://steamcommunity.com/id/FiNiShYy"
+          ]
+        }
+      }
+    </script>
+
+    <!--
+      Aplica o tema antes do primeiro paint, senão a página pisca no tema
+      claro antes do React montar. Mesma chave usada em useTema.
+    -->
+    <script>
+      try {
+        var tema = localStorage.getItem("tema");
+        if (!tema) tema = matchMedia("(prefers-color-scheme: dark)").matches ? "escuro" : "claro";
+        document.documentElement.dataset.tema = tema;
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <!-- Para crawlers sem JavaScript; a versão completa está em /llms.txt. -->
+    <noscript>
+      <h1>Kauã Gabriel — Desenvolvedor Full Stack</h1>
+      <p>
+        Desenvolvedor full stack em Maringá, PR, na Salt Systems desde setembro de 2023. Constrói APIs,
+        integrações financeiras e agentes de IA para fintechs de crédito e cobrança com React, TypeScript,
+        Node.js, Express, MongoDB, Redis, Claude API, MCP, LiveKit, Docker e AWS.
+      </p>
+      <p>
+        Projetos: <a href="https://tino.systems">Tino</a>, <a href="https://saltsystems.com.br/">Portal Salt Systems</a>,
+        <a href="https://portal-confederacao.vercel.app">CEACC</a>.
+      </p>
+      <p>
+        <a href="https://www.linkedin.com/in/kauagabriell/">LinkedIn</a> ·
+        <a href="https://github.com/FiNiShYy">GitHub</a> ·
+        <a href="mailto:kauagabrielramkg@gmail.com">kauagabrielramkg@gmail.com</a> ·
+        <a href="/curriculo-kaua-gabriel.pdf">Currículo (PDF)</a> ·
+        <a href="/resume-kaua-gabriel.pdf">Resume (PDF)</a> ·
+        <a href="/llms.txt">Resumo completo</a>
+      </p>
+    </noscript>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

@@ -1,0 +1,336 @@
+{
+  "hero": {
+    "tag": "Full stack developer · Salt Systems",
+    "titulo": "Kauã Gabriel",
+    "lead": "I build APIs, financial integrations and AI agents for credit and collections fintechs — from the service that talks to the bank to the screen where customers settle their debts.",
+    "local": "Maringá, Brazil · shipping to production since 2023"
+  },
+  "terminal": {
+    "titulo": "kaua@dev: ~",
+    "linhas": [
+      {
+        "tipo": "cmd",
+        "texto": "whoami"
+      },
+      {
+        "tipo": "saida",
+        "texto": "kaua — full stack dev · Maringá/BR"
+      },
+      {
+        "tipo": "cmd",
+        "texto": "cat stack.txt"
+      },
+      {
+        "tipo": "saida",
+        "texto": "react · typescript · node · express"
+      },
+      {
+        "tipo": "saida",
+        "texto": "mongodb · redis · docker · aws"
+      },
+      {
+        "tipo": "saida",
+        "texto": "claude api · mcp · playwright"
+      },
+      {
+        "tipo": "cmd",
+        "texto": "uptime"
+      },
+      {
+        "tipo": "saida",
+        "texto": "3+ years building for fintechs"
+      },
+      {
+        "tipo": "cmd",
+        "texto": "status"
+      },
+      {
+        "tipo": "ok",
+        "texto": "● open to good conversations"
+      }
+    ]
+  },
+  "stack": {
+    "titulo": "My stack",
+    "sub": "What I actually use, day to day and in production — grouped by the role each tool plays.",
+    "grupos": {
+      "front": {
+        "titulo": "Front-end",
+        "texto": "Responsive, multilingual interfaces with per-client branding."
+      },
+      "back": {
+        "titulo": "Back-end & APIs",
+        "texto": "Services that connect collection platforms to banks and payment providers, plus real-time features like calls and live presence."
+      },
+      "ia": {
+        "titulo": "AI & Agents",
+        "texto": "Agents that do real work, with custom tools exposed through MCP."
+      },
+      "dados": {
+        "titulo": "Data",
+        "texto": "Document storage, caching and queues."
+      },
+      "infra": {
+        "titulo": "Infra & Deploy",
+        "texto": "Containerized services shipped to the cloud and to VPSs."
+      },
+      "qualidade": {
+        "titulo": "Quality",
+        "texto": "End-to-end journey tests and consistent code before every deploy."
+      },
+      "design": {
+        "titulo": "Design",
+        "texto": "From prototype to interface."
+      }
+    }
+  },
+  "construo": {
+    "titulo": "What I build",
+    "sub": "Most of my work has no screen: it's APIs and services running behind the scenes at fintechs. These are the kinds of systems I ship.",
+    "itens": {
+      "integracoes": {
+        "tag": "integrations",
+        "titulo": "Bank and fintech integrations",
+        "texto": "Services that connect collection platforms to financial institutions: debt lookup, settlement simulation, boleto and Pix issuing.",
+        "pontos": [
+          "REST APIs and legacy SOAP services",
+          "JWT auth and multichannel OTP",
+          "Caching and queues with Redis"
+        ],
+        "comentario": "// settlement simulation — sample data"
+      },
+      "agentes": {
+        "tag": "ai",
+        "titulo": "AI agents in production",
+        "texto": "Agents built on the Claude API that orchestrate collection, support and management routines, using custom tools exposed through MCP.",
+        "pontos": [
+          "MCP servers with validated tools",
+          "Orchestration across agents and services",
+          "Context and memory persisted in MongoDB"
+        ],
+        "comentario": "// MCP tool exposed to the agent"
+      },
+      "portais": {
+        "tag": "portals",
+        "titulo": "White-label self-service portals",
+        "texto": "A single front-end serving many brands: theme, content and language resolved at runtime from the domain being accessed.",
+        "pontos": [
+          "Multi-tenant with per-client theming",
+          "i18n and server-side rendering",
+          "PWA with push notifications"
+        ],
+        "comentario": "// the domain decides brand, theme and language"
+      },
+      "servicos": {
+        "tag": "infra",
+        "titulo": "Services, deploy and quality",
+        "texto": "Node.js microservices packaged with Docker, with end-to-end journey tests running before every release.",
+        "pontos": [
+          "Docker + deploys to VPS and AWS",
+          "Playwright E2E and unit tests",
+          "ESLint and Prettier as the baseline"
+        ],
+        "comentario": "# start the service and run the E2E journey"
+      }
+    }
+  },
+  "projetos": {
+    "titulo": "Projects",
+    "sub": "Public websites and portals I worked on — from my first steps to client projects.",
+    "itens": {
+      "tino": {
+        "tipo": "SaaS platform",
+        "titulo": "Tino",
+        "resumo": "Work management and team communication platform with an AI assistant. I led the migration of the whole panel to React, including calls, live presence and the virtual office.",
+        "detalhes": [
+          "Migrated the legacy panel (HTML/JS) to React + Vite in waves, through the final legacy cutover",
+          "LiveKit calls: stage, screen sharing, PiP and radio; voice over WebSocket and presence over SSE",
+          "Canvas-based virtual office with proximity and mascots",
+          "Public pages with server-side rendering (SSR) and SEO",
+          "State with Zustand and TanStack Query; tests with Vitest and Testing Library"
+        ]
+      },
+      "fci": {
+        "tipo": "Company website",
+        "titulo": "FCI Viagens",
+        "resumo": "Website for a travel agency with itineraries, corporate travel and direct support over WhatsApp.",
+        "detalhes": [
+          "Hero with a call to talk to an agent",
+          "Itineraries, corporate travel and management sections",
+          "Floating priority-support button"
+        ]
+      },
+      "ceacc": {
+        "tipo": "Portal",
+        "titulo": "CEACC",
+        "resumo": "Portal for a sport shooting confederation, with rules, competition calendar, gallery and documents.",
+        "detalhes": [
+          "Built with Astro",
+          "Light and dark theme",
+          "Rules, calendar and gallery pages"
+        ]
+      },
+      "fazcredito": {
+        "tipo": "Company website",
+        "titulo": "Faz Crédito",
+        "resumo": "Financial services website — from refinancing to investments — with live currency quotes at the top.",
+        "detalhes": [
+          "Live exchange-rate ticker",
+          "Services and products showcase",
+          "Customer login area"
+        ]
+      },
+      "salt": {
+        "tipo": "Corporate portal",
+        "titulo": "Salt Systems Portal",
+        "resumo": "Redesign of the company website, to grab more attention and communicate its solutions more clearly.",
+        "detalhes": [
+          "Full redesign of the digital identity",
+          "Focus on clarity of the offering",
+          "Current version in production"
+        ]
+      },
+      "saltHtml": {
+        "tipo": "Corporate portal",
+        "titulo": "Salt Systems Portal (v1)",
+        "resumo": "First version of the company website, built with plain HTML, CSS and JavaScript.",
+        "detalhes": [
+          "HTML, CSS and JavaScript, no framework",
+          "Responsive layout",
+          "Foundation for the current version"
+        ]
+      },
+      "eletro": {
+        "tipo": "Landing page",
+        "titulo": "Eletro São José",
+        "resumo": "My first published project: a landing page for a power-tool repair shop.",
+        "detalhes": [
+          "HTML, CSS and JavaScript",
+          "Carousel of serviced brands",
+          "Hosted on GitHub Pages"
+        ]
+      },
+      "organo": {
+        "tipo": "Study",
+        "titulo": "Organo",
+        "resumo": "A team organizer in React, built during Alura's React track.",
+        "detalhes": [
+          "Components and props",
+          "State with hooks",
+          "Controlled forms"
+        ]
+      }
+    }
+  },
+  "jornada": {
+    "titulo": "Journey",
+    "sub": "A short but intense path: almost everything I know I learned solving real problems in production.",
+    "itens": [
+      {
+        "periodo": "2023",
+        "titulo": "First lines of code",
+        "texto": "Java with JFrame, Git and GitHub, a JavaScript course and my first published website."
+      },
+      {
+        "periodo": "Sep 2023",
+        "titulo": "Developer at Salt Systems",
+        "texto": "I join Salt to build collection tools for fintechs. First big project: the company's new website."
+      },
+      {
+        "periodo": "2024",
+        "titulo": "React and Astro",
+        "texto": "Alura's React track, my first portfolio and Astro portals for clients across different industries."
+      },
+      {
+        "periodo": "2025",
+        "titulo": "Back-end and integrations",
+        "texto": "Node.js and Express in production: settlement APIs and integrations with banks, payment providers and SOAP services."
+      },
+      {
+        "periodo": "2026",
+        "titulo": "AI agents and platforms",
+        "texto": "Agents on the Claude API and MCP orchestrating collection routines, and a multi-tenant white-label portal with i18n and E2E tests."
+      },
+      {
+        "periodo": "Final semester",
+        "titulo": "Software Engineering · UniCesumar",
+        "texto": "Wrapping up a B.Sc. in Software Engineering, alongside work."
+      }
+    ]
+  },
+  "inspiracoes": {
+    "titulo": "People who inspire me",
+    "sub": "People from very different fields with one thing in common: when I watch their work, I understand where I want to get one day.",
+    "itens": {
+      "kerber": {
+        "papel": "Founder of Salt Systems",
+        "texto": "Founded the company where I grew as a developer and shows, in practice, how to turn technology into a business."
+      },
+      "akita": {
+        "papel": "Developer and creator of AkitaOnRails",
+        "texto": "Decades of career, unfiltered opinions and a lot of learning in public. The visual reference for this site came from him."
+      },
+      "igor": {
+        "papel": "Co-founder of Flow Podcast",
+        "texto": "Started with a gaming channel and built one of the biggest podcasts in Brazil."
+      },
+      "rato": {
+        "papel": "Douglas Mesquita",
+        "texto": "Years of making content about games, electronics and robotics his own way, without losing authenticity."
+      },
+      "acf": {
+        "papel": "Car channel",
+        "texto": "Turned the daily life of a tuning shop into one of Brazil's biggest car channels, with consistency video after video."
+      },
+      "cev": {
+        "papel": "Prof. Gustavo Guanabara",
+        "texto": "Where I wrote my first lines of JavaScript. Quality teaching, for free, for anyone who wants to start."
+      },
+      "mat": {
+        "papel": "Car rebuilds",
+        "texto": "Rebuilds wrecked cars learning as he goes, without being a trained mechanic. Dedication beats a diploma."
+      }
+    },
+    "destaque": {
+      "titulo": "Code and combustion",
+      "texto": "Programming and car mechanics are two big passions of mine, and they have a lot in common. Both call for investigation, hypotheses, conclusions and, above all, getting your hands dirty. Whether it is a bug in production or a strange noise in the engine, the path is the same: understand the cause before doing anything."
+    }
+  },
+  "foraDoCodigo": {
+    "titulo": "Off the clock",
+    "sub": "A bit of who I am once the terminal is closed.",
+    "itens": {
+      "setup": {
+        "tag": "setup",
+        "titulo": "Windows at home, Linux at work",
+        "texto": "My favorite OS is Windows, but at work my day runs on Linux: servers, containers and the terminal."
+      },
+      "jogos": {
+        "tag": "steam",
+        "titulo": "Games",
+        "texto": "I enjoy competitive shooters like Counter-Strike, Brawlhalla with friends, stealth games like Hitman and Splinter Cell, co-op like PEAK and the classic Garry's Mod sandbox, which has been with me for years."
+      },
+      "simuladores": {
+        "tag": "sim racing",
+        "titulo": "Simulators",
+        "texto": "Assetto Corsa and BeamNG.drive, plus some Euro Truck Simulator now and then: where my love for cars and technology meet."
+      },
+      "impressao": {
+        "tag": "3D printing",
+        "titulo": "3D printing",
+        "texto": "Model, slice, tweak and print again: a trial-and-error loop that feels a lot like debugging."
+      }
+    }
+  },
+  "contato": {
+    "titulo": "Let's talk",
+    "sub": "Each channel shows a different side of me. Pick whatever works best for you.",
+    "canais": {
+      "linkedin": "The professional side: experience, milestones and what I'm learning.",
+      "github": "Side projects, studies and the source code of this portfolio.",
+      "whatsapp": "The fastest way to reach me.",
+      "email": "For proposals and longer conversations."
+    },
+    "whatsappMensagem": "Hi! I saw your portfolio and would like to talk to you."
+  }
+}

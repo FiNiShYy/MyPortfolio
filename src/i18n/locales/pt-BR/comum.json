@@ -1,0 +1,36 @@
+{
+  "nav": {
+    "stack": "Stack",
+    "construo": "O que construo",
+    "projetos": "Projetos",
+    "jornada": "Jornada",
+    "contato": "Contato",
+    "abrirMenu": "Abrir menu",
+    "fecharMenu": "Fechar menu"
+  },
+  "acoes": {
+    "curriculo": "Currículo",
+    "baixarCurriculo": "Baixar currículo",
+    "verStack": "Ver minha stack",
+    "verDetalhes": "Ver detalhes",
+    "visitar": "Visitar site",
+    "fechar": "Fechar",
+    "copiar": "Copiar",
+    "copiado": "Copiado!",
+    "arquivado": "Site fora do ar · arquivado"
+  },
+  "tema": {
+    "claro": "Ativar tema claro",
+    "escuro": "Ativar tema escuro"
+  },
+  "idioma": {
+    "trocar": "Switch to English",
+    "sigla": "EN"
+  },
+  "rodape": {
+    "feito": "Feito com React, styled-components e a ajuda do Claude — saudade dos bons e velhos tempos de escrever cada linha na mão.",
+    "direitos": "© {{ano}} Kauã Gabriel",
+    "atualizado": "Última atualização em {{data}}"
+  },
+  "curriculoArquivo": "/curriculo-kaua-gabriel.pdf"
+}

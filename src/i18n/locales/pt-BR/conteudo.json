@@ -1,0 +1,336 @@
+{
+  "hero": {
+    "tag": "Desenvolvedor full stack · Salt Systems",
+    "titulo": "Kauã Gabriel",
+    "lead": "Construo APIs, integrações financeiras e agentes de IA para fintechs de crédito e cobrança — do serviço que conversa com o banco à tela onde o cliente negocia.",
+    "local": "Maringá, PR · em produção desde 2023"
+  },
+  "terminal": {
+    "titulo": "kaua@dev: ~",
+    "linhas": [
+      {
+        "tipo": "cmd",
+        "texto": "whoami"
+      },
+      {
+        "tipo": "saida",
+        "texto": "kaua — dev full stack · Maringá/PR"
+      },
+      {
+        "tipo": "cmd",
+        "texto": "cat stack.txt"
+      },
+      {
+        "tipo": "saida",
+        "texto": "react · typescript · node · express"
+      },
+      {
+        "tipo": "saida",
+        "texto": "mongodb · redis · docker · aws"
+      },
+      {
+        "tipo": "saida",
+        "texto": "claude api · mcp · playwright"
+      },
+      {
+        "tipo": "cmd",
+        "texto": "uptime"
+      },
+      {
+        "tipo": "saida",
+        "texto": "3+ anos construindo para fintechs"
+      },
+      {
+        "tipo": "cmd",
+        "texto": "status"
+      },
+      {
+        "tipo": "ok",
+        "texto": "● aberto a boas conversas"
+      }
+    ]
+  },
+  "stack": {
+    "titulo": "Minha stack",
+    "sub": "O que eu uso de verdade, no dia a dia e em produção — agrupado pelo papel que cada ferramenta cumpre.",
+    "grupos": {
+      "front": {
+        "titulo": "Front-end",
+        "texto": "Interfaces responsivas, multi-idioma e com identidade visual por cliente."
+      },
+      "back": {
+        "titulo": "Back-end & APIs",
+        "texto": "Serviços que integram plataformas de cobrança a bancos e meios de pagamento, e recursos em tempo real como chamadas e presença ao vivo."
+      },
+      "ia": {
+        "titulo": "IA & Agentes",
+        "texto": "Agentes que executam tarefas reais, com ferramentas próprias expostas via MCP."
+      },
+      "dados": {
+        "titulo": "Dados",
+        "texto": "Persistência de documentos, cache e filas."
+      },
+      "infra": {
+        "titulo": "Infra & Deploy",
+        "texto": "Serviços empacotados em containers e publicados em nuvem e VPS."
+      },
+      "qualidade": {
+        "titulo": "Qualidade",
+        "texto": "Testes de jornada ponta a ponta e código padronizado antes de cada deploy."
+      },
+      "design": {
+        "titulo": "Design",
+        "texto": "Do protótipo à interface."
+      }
+    }
+  },
+  "construo": {
+    "titulo": "O que eu construo",
+    "sub": "Boa parte do meu trabalho não tem tela: são APIs e serviços rodando nos bastidores de fintechs. Estes são os tipos de sistema que eu entrego.",
+    "itens": {
+      "integracoes": {
+        "tag": "integrações",
+        "titulo": "Integrações com bancos e fintechs",
+        "texto": "Serviços que conectam plataformas de cobrança a instituições financeiras: consulta de dívidas, simulação de acordos, emissão de boletos e Pix.",
+        "pontos": [
+          "APIs REST e serviços SOAP legados",
+          "Autenticação com JWT e OTP multicanal",
+          "Cache e filas com Redis"
+        ],
+        "comentario": "// simulação de acordo — dados fictícios"
+      },
+      "agentes": {
+        "tag": "ia",
+        "titulo": "Agentes de IA em produção",
+        "texto": "Agentes construídos com a Claude API que orquestram rotinas de cobrança, atendimento e gestão, usando ferramentas próprias expostas via MCP.",
+        "pontos": [
+          "Servidores MCP com ferramentas validadas",
+          "Orquestração entre agentes e serviços",
+          "Contexto e memória persistidos em MongoDB"
+        ],
+        "comentario": "// ferramenta MCP exposta ao agente"
+      },
+      "portais": {
+        "tag": "portais",
+        "titulo": "Portais de autonegociação whitelabel",
+        "texto": "Um único front-end que atende várias marcas: tema, conteúdo e idioma resolvidos em tempo de execução a partir do domínio acessado.",
+        "pontos": [
+          "Multi-tenant com tema por cliente",
+          "i18n e renderização no servidor",
+          "PWA com notificações push"
+        ],
+        "comentario": "// o domínio decide marca, tema e idioma"
+      },
+      "servicos": {
+        "tag": "infra",
+        "titulo": "Serviços, deploy e qualidade",
+        "texto": "Microsserviços em Node.js empacotados em Docker, com testes de jornada ponta a ponta rodando antes de cada publicação.",
+        "pontos": [
+          "Docker + deploy em VPS e AWS",
+          "Playwright E2E e testes unitários",
+          "ESLint e Prettier como padrão"
+        ],
+        "comentario": "# sobe o serviço e roda a jornada E2E"
+      }
+    }
+  },
+  "projetos": {
+    "titulo": "Projetos",
+    "sub": "Sites e portais públicos em que trabalhei — dos primeiros passos aos projetos para clientes.",
+    "itens": {
+      "tino": {
+        "tipo": "Plataforma SaaS",
+        "titulo": "Tino",
+        "resumo": "Plataforma de gestão de trabalho e comunicação de equipe com assistente de IA. Conduzi a migração do painel inteiro para React, incluindo chamadas, presença ao vivo e o escritório virtual.",
+        "detalhes": [
+          "Migração do painel legado (HTML/JS) para React + Vite em ondas, até o corte final do legado",
+          "Chamadas com LiveKit: palco, tela compartilhada, PiP e rádio; voz por WebSocket e presença por SSE",
+          "Escritório virtual em canvas, com proximidade e mascotes",
+          "Páginas públicas com renderização no servidor (SSR) e SEO",
+          "Estado com Zustand e TanStack Query; testes com Vitest e Testing Library"
+        ]
+      },
+      "fci": {
+        "tipo": "Site institucional",
+        "titulo": "FCI Viagens",
+        "resumo": "Site de uma agência de viagens com roteiros, viagens corporativas e atendimento direto pelo WhatsApp.",
+        "detalhes": [
+          "Hero com chamada para atendimento",
+          "Seções de roteiros, viagens corporativas e gestão",
+          "Botão flutuante de atendimento prioritário"
+        ]
+      },
+      "ceacc": {
+        "tipo": "Portal",
+        "titulo": "CEACC",
+        "resumo": "Portal de uma confederação de tiro esportivo, com regulamentos, calendário de competições, galeria e documentação.",
+        "detalhes": [
+          "Construído com Astro",
+          "Tema claro e escuro",
+          "Páginas de regulamentos, calendário e galeria"
+        ]
+      },
+      "fazcredito": {
+        "tipo": "Site institucional",
+        "titulo": "Faz Crédito",
+        "resumo": "Site de soluções financeiras — refinanciamento a investimentos — com cotações de moedas em tempo real no topo.",
+        "detalhes": [
+          "Faixa de cotações de câmbio ao vivo",
+          "Vitrine de serviços e produtos",
+          "Área de acesso do cliente"
+        ]
+      },
+      "salt": {
+        "tipo": "Portal corporativo",
+        "titulo": "Portal Salt Systems",
+        "resumo": "Renovação do portal da empresa, para chamar mais atenção e comunicar melhor as soluções oferecidas.",
+        "detalhes": [
+          "Redesenho completo da identidade digital",
+          "Foco em clareza das soluções",
+          "Versão atual em produção"
+        ]
+      },
+      "saltHtml": {
+        "tipo": "Portal corporativo",
+        "titulo": "Portal Salt Systems (v1)",
+        "resumo": "Primeira versão do portal da empresa, feita em HTML, CSS e JavaScript puros.",
+        "detalhes": [
+          "HTML, CSS e JavaScript sem framework",
+          "Layout responsivo",
+          "Base para a versão atual"
+        ]
+      },
+      "eletro": {
+        "tipo": "Landing page",
+        "titulo": "Eletro São José",
+        "resumo": "Meu primeiro projeto publicado: landing page de uma assistência técnica de ferramentas elétricas.",
+        "detalhes": [
+          "HTML, CSS e JavaScript",
+          "Carrossel de marcas atendidas",
+          "Publicado no GitHub Pages"
+        ]
+      },
+      "organo": {
+        "tipo": "Estudo",
+        "titulo": "Organo",
+        "resumo": "Organizador de times em React, desenvolvido durante a formação React da Alura.",
+        "detalhes": [
+          "Componentização e props",
+          "Estado com hooks",
+          "Formulários controlados"
+        ]
+      }
+    }
+  },
+  "jornada": {
+    "titulo": "Jornada",
+    "sub": "Uma trajetória curta, mas intensa: quase tudo o que sei aprendi resolvendo problema real em produção.",
+    "itens": [
+      {
+        "periodo": "2023",
+        "titulo": "Primeiras linhas de código",
+        "texto": "Java com JFrame, Git e GitHub, o curso de JavaScript do Curso em Vídeo e meu primeiro site publicado."
+      },
+      {
+        "periodo": "Set 2023",
+        "titulo": "Desenvolvedor na Salt Systems",
+        "texto": "Entro na Salt para desenvolver ferramentas de cobrança para fintechs. Primeiro grande projeto: o novo portal da empresa."
+      },
+      {
+        "periodo": "2024",
+        "titulo": "React e Astro",
+        "texto": "Formação React na Alura, primeiro portfolio e portais em Astro para clientes de setores diferentes."
+      },
+      {
+        "periodo": "2025",
+        "titulo": "Back-end e integrações",
+        "texto": "Node.js e Express em produção: APIs de negociação e integrações com bancos, meios de pagamento e serviços SOAP."
+      },
+      {
+        "periodo": "2026",
+        "titulo": "Agentes de IA e plataformas",
+        "texto": "Agentes com Claude API e MCP orquestrando rotinas de cobrança, e um portal whitelabel multi-tenant com i18n e testes E2E."
+      },
+      {
+        "periodo": "Último semestre",
+        "titulo": "Engenharia de Software · UniCesumar",
+        "texto": "Reta final da graduação em Engenharia de Software, em paralelo ao trabalho."
+      }
+    ]
+  },
+  "inspiracoes": {
+    "titulo": "Quem me inspira",
+    "sub": "Pessoas de áreas bem diferentes, com algo em comum: vejo o trabalho delas e entendo onde, um dia, quero chegar.",
+    "itens": {
+      "kerber": {
+        "papel": "Fundador da Salt Systems",
+        "texto": "Fundou a empresa onde eu cresci como dev e mostra, na prática, como transformar tecnologia em negócio."
+      },
+      "akita": {
+        "papel": "Dev e criador do AkitaOnRails",
+        "texto": "Décadas de carreira, opinião sem filtro e muito estudo em público. A referência visual deste site veio dele."
+      },
+      "igor": {
+        "papel": "Cofundador do Flow Podcast",
+        "texto": "Começou com um canal de games e construiu um dos maiores podcasts do Brasil."
+      },
+      "rato": {
+        "papel": "Douglas Mesquita",
+        "texto": "Anos criando conteúdo sobre games, eletrônica e robótica do jeito dele, sem perder a autenticidade."
+      },
+      "acf": {
+        "papel": "Canal automotivo",
+        "texto": "Transformou a rotina de uma oficina em um dos maiores canais automotivos do país, com consistência vídeo após vídeo."
+      },
+      "cev": {
+        "papel": "Prof. Gustavo Guanabara",
+        "texto": "Foi onde escrevi minhas primeiras linhas de JavaScript. Ensino de qualidade, de graça, para quem quiser começar."
+      },
+      "mat": {
+        "papel": "Reconstrução de carros",
+        "texto": "Reconstrói carros destruídos aprendendo no caminho, sem ser mecânico de formação. Dedicação vale mais que diploma."
+      }
+    },
+    "destaque": {
+      "titulo": "Código e combustão",
+      "texto": "Programação e mecânica automotiva são duas grandes paixões minhas, e elas conversam muito entre si. As duas pedem investigação, hipóteses, conclusões e, principalmente, pôr a mão na massa. Seja um bug em produção ou um barulho estranho no motor, o caminho é o mesmo: entender a causa antes de fazer algo."
+    }
+  },
+  "foraDoCodigo": {
+    "titulo": "Fora do código",
+    "sub": "Um pouco de quem eu sou quando o terminal fecha.",
+    "itens": {
+      "setup": {
+        "tag": "setup",
+        "titulo": "Windows em casa, Linux no trabalho",
+        "texto": "Meu sistema favorito é o Windows, mas no trabalho o dia é em Linux: servidores, containers e terminal."
+      },
+      "jogos": {
+        "tag": "steam",
+        "titulo": "Jogos",
+        "texto": "Curto FPS competitivo como Counter-Strike, luta com os amigos no Brawlhalla, stealth como Hitman e Splinter Cell, cooperativos como PEAK e o clássico sandbox Garry's Mod, que me acompanha há anos."
+      },
+      "simuladores": {
+        "tag": "sim racing",
+        "titulo": "Simuladores",
+        "texto": "Assetto Corsa e BeamNG.drive, com uma passada no Euro Truck Simulator de vez em quando: onde a paixão por carros e a tecnologia andam juntas."
+      },
+      "impressao": {
+        "tag": "impressão 3D",
+        "titulo": "Impressão 3D",
+        "texto": "Modelar, fatiar, ajustar e imprimir de novo: um ciclo de tentativa e erro que lembra muito depurar código."
+      }
+    }
+  },
+  "contato": {
+    "titulo": "Vamos conversar",
+    "sub": "Cada canal mostra um lado diferente meu. Escolha o que for melhor pra você.",
+    "canais": {
+      "linkedin": "O lado mais profissional: experiência, conquistas e o que ando estudando.",
+      "github": "Projetos pessoais, estudos e o código deste portfolio.",
+      "whatsapp": "O jeito mais rápido de falar comigo.",
+      "email": "Para propostas e conversas com mais calma."
+    },
+    "whatsappMensagem": "Olá! Vi seu portfólio e gostaria de conversar com você."
+  }
+}

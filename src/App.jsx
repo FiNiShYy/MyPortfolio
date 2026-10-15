@@ -1,29 +1,29 @@
-import Header from './components/Header'
-import Banner from './components/Banner'
-import About from './components/About'
-import Porftolio from './components/Portfolio'
-import Technologies from './components/Technologies'
-import Footer from './components/Footer'
-import { useState } from 'react'
+import Cabecalho from "./components/Cabecalho";
+import Hero from "./components/Hero";
+import Stack from "./components/Stack";
+import Construo from "./components/Construo";
+import Projetos from "./components/Projetos";
+import Jornada from "./components/Jornada";
+import Inspiracoes from "./components/Inspiracoes";
+import ForaDoCodigo from "./components/ForaDoCodigo";
+import Contato from "./components/Contato";
+import Rodape from "./components/Rodape";
 
+const App = () => (
+  <>
+    <Cabecalho />
+    <main>
+      <Hero />
+      <Stack />
+      <Construo />
+      <Projetos />
+      <Jornada />
+      <Inspiracoes />
+      <ForaDoCodigo />
+      <Contato />
+    </main>
+    <Rodape />
+  </>
+);
 
-const App = () => {
-  const [isEnglish, setIsEnglish] = useState(false);
-
-  const toggleLanguage = () => {
-    setIsEnglish(prev => !prev);
-};
-
-  return (
-    <div>
-    <Header isEnglish={isEnglish} toggleLanguage={toggleLanguage}/>
-    <Banner isEnglish={isEnglish}/>
-    <About isEnglish={isEnglish}/>
-    <Porftolio isEnglish={isEnglish}/>
-    <Technologies isEnglish={isEnglish}/>
-    <Footer isEnglish={isEnglish}/>
-    </div>
-  )
-}
-
-export default App
+export default App;
