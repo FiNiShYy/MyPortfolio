@@ -10,7 +10,7 @@ const Blog = () => {
   const linhas = t("blog.terminal", { returnObjects: true });
 
   return (
-    <Secao id="blog" titulo={t("blog.titulo")} sub={t("blog.sub")}>
+    <Secao id="blog" titulo={t("blog.titulo")} sub={t("blog.sub")} nivel="h1">
       <Revelar>
         <S.Destaque>
           <div>

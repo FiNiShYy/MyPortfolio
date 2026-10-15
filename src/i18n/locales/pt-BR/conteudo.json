@@ -362,5 +362,73 @@
       "email": "Para propostas e conversas com mais calma."
     },
     "whatsappMensagem": "Olá! Vi seu portfólio e gostaria de conversar com você."
+  },
+  "bastidores": {
+    "titulo": "Bastidores",
+    "sub": "Curiosidades sobre como este site foi feito, os números do repositório e para onde ele vai.",
+    "numerosTitulo": "Em números",
+    "numerosNota": "Calculados automaticamente no último build.",
+    "numeros": {
+      "linhas": "linhas de código",
+      "componentes": "componentes",
+      "chaves": "textos traduzidos",
+      "tecnologias": "tecnologias na stack",
+      "projetos": "projetos",
+      "dependencias": "dependências"
+    },
+    "hojeTag": "hoje",
+    "hojeTitulo": "100% hardcoded",
+    "hojeTexto": "Não existe backend nem banco de dados por trás deste site, por enquanto. Cada texto, projeto e tecnologia vive em arquivos JSON e JS dentro do repositório, e toda mudança é um commit que a Vercel publica sozinha.",
+    "curiosidadesTitulo": "Curiosidades",
+    "curiosidades": {
+      "hardcoded": {
+        "titulo": "Sem banco, só arquivos",
+        "texto": "O conteúdo inteiro está em src/i18n e src/dados. Simples, versionado e rápido, mas cada atualização exige um deploy."
+      },
+      "ia": {
+        "titulo": "Feito em dupla com IA",
+        "texto": "Construído com a ajuda do Claude, do primeiro componente ao deploy: pesquisa de referências, código, prints de verificação e até o currículo."
+      },
+      "padrao": {
+        "titulo": "Mesmo padrão do trabalho",
+        "texto": "Segue o padrão de estilização do portal whitelabel da Salt: tokens CSS por papel, styled-components e um styles.jsx ao lado de cada componente."
+      },
+      "gato": {
+        "titulo": "O gatinho sobreviveu",
+        "texto": "A ilustração de \"Fora do código\" veio do portfolio de 2024. Ela foi apagada na limpeza e resgatada do histórico do git."
+      },
+      "curriculo": {
+        "titulo": "Currículo gerado por código",
+        "texto": "Os PDFs em português e inglês, o favicon e a imagem de compartilhamento são gerados por scripts, renderizando HTML no navegador."
+      },
+      "crawlers": {
+        "titulo": "Feito para ser encontrado por IA",
+        "texto": "Tem llms.txt, dados estruturados JSON-LD e um robots.txt que dá boas-vindas aos crawlers de IA pelo nome."
+      },
+      "cores": {
+        "titulo": "Cores em OKLCH",
+        "texto": "Toda a paleta é definida em OKLCH, com contraste de texto acima de 7:1 nos dois temas."
+      },
+      "historia": {
+        "titulo": "Do CRA ao Vite",
+        "texto": "A primeira versão, de janeiro de 2024, usava Create React App e CSS puro. Esta é a reescrita completa, de outubro de 2026."
+      }
+    },
+    "roadmapTitulo": "Próximos passos",
+    "roadmapSub": "Do hardcoded ao banco de dados: o que já existe e o que vem por aí.",
+    "estados": {
+      "feito": "feito",
+      "agora": "em andamento",
+      "planejado": "planejado"
+    },
+    "roadmap": {
+      "redesign": "Redesign com React 19, Vite e styled-components",
+      "hardcoded": "Conteúdo 100% hardcoded em JSON e JS, versionado no git",
+      "posts": "Primeiros posts do blog, escritos em Markdown",
+      "banco": "Banco de dados para posts e conteúdo, com API própria",
+      "painel": "Painel para publicar e editar sem precisar de commit",
+      "interacao": "Visitas, reações e comentários nos posts",
+      "dominio": "Domínio próprio"
+    }
   }
 }

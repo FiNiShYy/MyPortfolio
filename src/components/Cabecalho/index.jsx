@@ -2,18 +2,26 @@ import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { FaGithub } from "react-icons/fa6";
 import { LuMenu, LuMoon, LuSun, LuX } from "react-icons/lu";
+import { NavLink, useLocation, useNavigate } from "react-router-dom";
 
 import { trocarIdioma } from "../../i18n";
 import { useTema } from "../../hooks/useTema";
-import { aoClicarAncora } from "../../utils/rolarPara";
+import { rolarPara } from "../../utils/rolarPara";
 import { Botao } from "../ui";
 import * as S from "./styles";
 
-const SECOES = ["stack", "construo", "projetos", "jornada", "blog", "contato"];
+// Seções da home (rolagem) e páginas próprias (rota).
+const SECOES = ["stack", "construo", "projetos", "jornada", "contato"];
+const PAGINAS = [
+  { id: "blog", rota: "/blog" },
+  { id: "bastidores", rota: "/bastidores" },
+];
 
 const Cabecalho = () => {
   const { t, i18n } = useTranslation();
   const { tema, alternar } = useTema();
+  const { pathname } = useLocation();
+  const navegar = useNavigate();
   const [rolou, setRolou] = useState(false);
   const [menuAberto, setMenuAberto] = useState(false);
 
@@ -24,22 +32,43 @@ const Cabecalho = () => {
     return () => window.removeEventListener("scroll", aoRolar);
   }, []);
 
+  useEffect(() => setMenuAberto(false), [pathname]);
+
   const emPortugues = i18n.language === "pt-BR";
   const fecharMenu = () => setMenuAberto(false);
+
+  // Na home só rola; fora dela volta para a home e a Inicio rola até a seção.
+  // Ctrl/meio-clique seguem o href normal (/#secao), que a Inicio também entende.
+  const irPara = (id) => (evento) => {
+    if (evento.ctrlKey || evento.metaKey || evento.shiftKey || evento.button !== 0) return;
+    evento.preventDefault();
+    fecharMenu();
+    if (pathname === "/") rolarPara(id);
+    else navegar("/", { state: { secao: id } });
+  };
+
+  const linksSecoes = SECOES.map((id) => (
+    <a key={id} href={`/#${id}`} onClick={irPara(id)}>
+      {t(`nav.${id}`)}
+    </a>
+  ));
+  const linksPaginas = PAGINAS.map(({ id, rota }) => (
+    <NavLink key={id} to={rota} onClick={fecharMenu}>
+      {t(`nav.${id}`)}
+    </NavLink>
+  ));
 
   return (
     <>
       <S.Container $rolou={rolou || menuAberto}>
-        <S.Marca href="#topo" onClick={aoClicarAncora("topo", fecharMenu)}>
+        <S.Marca href="/" onClick={irPara("topo")}>
           Kauã Gabriel
         </S.Marca>
 
         <S.Nav aria-label="Principal">
-          {SECOES.map((id) => (
-            <a key={id} href={`#${id}`} onClick={aoClicarAncora(id)}>
-              {t(`nav.${id}`)}
-            </a>
-          ))}
+          {linksSecoes}
+          <S.Separador aria-hidden="true" />
+          {linksPaginas}
         </S.Nav>
 
         <S.Acoes>
@@ -90,11 +119,8 @@ const Cabecalho = () => {
       </S.Container>
 
       <S.MenuMobile id="menu-mobile" $aberto={menuAberto} aria-label="Menu">
-        {SECOES.map((id) => (
-          <a key={id} href={`#${id}`} onClick={aoClicarAncora(id, fecharMenu)}>
-            {t(`nav.${id}`)}
-          </a>
-        ))}
+        {linksSecoes}
+        {linksPaginas}
       </S.MenuMobile>
     </>
   );
