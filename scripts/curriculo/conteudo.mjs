@@ -7,7 +7,7 @@ const contato = {
   telefone: "+55 (44) 99757-9646",
   linkedin: "linkedin.com/in/kauagabriell",
   github: "github.com/FiNiShYy",
-  portfolio: "my-portfolio-kaua.vercel.app",
+  portfolio: "cabeludo.dev",
 };
 
 export const CURRICULO = {

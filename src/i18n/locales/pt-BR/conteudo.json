@@ -429,7 +429,7 @@
       "banco": "Banco de dados para posts e conteúdo, com API própria",
       "painel": "Painel para publicar e editar sem precisar de commit",
       "interacao": "Visitas, reações e comentários nos posts",
-      "dominio": "Domínio próprio"
+      "dominio": "Domínio próprio: cabeludo.dev"
     }
   }
 }

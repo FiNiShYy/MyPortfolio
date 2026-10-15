@@ -429,7 +429,7 @@
       "banco": "Database for posts and content, with its own API",
       "painel": "Admin panel to publish and edit without a commit",
       "interacao": "Views, reactions and comments on posts",
-      "dominio": "Custom domain"
+      "dominio": "Custom domain: cabeludo.dev"
     }
   }
 }
