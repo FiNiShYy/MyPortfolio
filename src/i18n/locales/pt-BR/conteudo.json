@@ -390,8 +390,8 @@
         "texto": "O Claude ajudou em partes do caminho, agilizando tarefas repetitivas e servindo de parceiro para trocar ideias. As decisões e o capricho são meus."
       },
       "padrao": {
-        "titulo": "Mesmo padrão do trabalho",
-        "texto": "Segue o padrão de estilização do portal whitelabel da Salt: tokens CSS por papel, styled-components e um styles.jsx ao lado de cada componente."
+        "titulo": "Mesmo padrão do dia a dia",
+        "texto": "Segue a mesma padronização que uso no meu dia a dia: tokens CSS por papel, styled-components e um styles.jsx ao lado de cada componente."
       },
       "gato": {
         "titulo": "O gatinho sobreviveu",

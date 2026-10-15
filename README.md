@@ -6,7 +6,7 @@ PT/EN, tema claro/escuro e animações sutis ao rolar.
 ## Stack
 
 - React 19 + Vite
-- styled-components 6 (tokens por papel em CSS vars, padrão do portal-whitelabel)
+- styled-components 6 (tokens por papel em CSS vars, padrão que uso no dia a dia)
 - react-i18next (pt-BR e en)
 - Fontes: Hubot Sans, Mona Sans e JetBrains Mono (via Fontsource)
 
