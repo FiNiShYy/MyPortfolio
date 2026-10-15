@@ -14,6 +14,7 @@ import {
   SiClaude,
   SiModelcontextprotocol,
   SiDocker,
+  SiJenkins,
   SiGit,
   SiEslint,
   SiPrettier,
@@ -92,6 +93,7 @@ export const GRUPOS_STACK = [
     cor: "ambar",
     itens: [
       { nome: "Docker", Icone: SiDocker },
+      { nome: "Jenkins", Icone: SiJenkins },
       { nome: "AWS", Icone: FaAws },
       { nome: "EasyPanel / VPS", Icone: LuServer },
       { nome: "Git", Icone: SiGit },
