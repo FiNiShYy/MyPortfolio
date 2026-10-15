@@ -262,6 +262,10 @@
     "titulo": "Quem me inspira",
     "sub": "Pessoas de áreas bem diferentes, com algo em comum: vejo o trabalho delas e entendo onde, um dia, quero chegar.",
     "itens": {
+      "ana": {
+        "papel": "Minha mãe",
+        "texto": "Me empurra até os meus limites e me ajuda a ir além deles. Com certeza eu não seria quem sou sem ela."
+      },
       "kerber": {
         "papel": "Fundador da Salt Systems",
         "texto": "Fundou a empresa onde eu cresci como dev e mostra, na prática, como transformar tecnologia em negócio."

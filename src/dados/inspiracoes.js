@@ -1,8 +1,16 @@
 // Papel e texto de cada pessoa vêm de conteudo:inspiracoes.itens.<id>.
 // Foto opcional: coloque public/inspiracoes/<id>.webp e defina `foto`;
 // sem foto, o card mostra as iniciais num círculo colorido.
-// `destaque` ocupa duas colunas no grid de quatro.
+// `destaque` ocupa duas colunas no grid de quatro; `largo` ocupa a linha inteira.
+// Sem `link`, o card não é clicável.
 export const INSPIRACOES = [
+  {
+    id: "ana",
+    nome: "Ana Claudia",
+    iniciais: "AC",
+    cor: "rosa",
+    largo: true,
+  },
   {
     id: "kerber",
     foto: "/inspiracoes/kerber.webp",
