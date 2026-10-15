@@ -3,6 +3,19 @@
   "framework": "vite",
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
+  "redirects": [
+    {
+      "source": "/:path*",
+      "missing": [
+        {
+          "type": "host",
+          "value": "cabeludo.dev"
+        }
+      ],
+      "destination": "https://cabeludo.dev/:path*",
+      "permanent": true
+    }
+  ],
   "rewrites": [
     {
       "source": "/(.*)",
