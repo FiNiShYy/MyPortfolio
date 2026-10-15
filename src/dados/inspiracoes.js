@@ -43,8 +43,8 @@ export const INSPIRACOES = [
   {
     id: "acf",
     foto: "/inspiracoes/acf.webp",
-    nome: "ACF Performance",
-    iniciais: "AC",
+    nome: "Ricardo Freitas",
+    iniciais: "RF",
     link: "https://www.youtube.com/@ACFPerformance",
     usuario: "@ACFPerformance",
     cor: "azul",
@@ -52,8 +52,8 @@ export const INSPIRACOES = [
   {
     id: "cev",
     foto: "/inspiracoes/cev.webp",
-    nome: "Curso em Vídeo",
-    iniciais: "CV",
+    nome: "Gustavo Guanabara",
+    iniciais: "GG",
     link: "https://www.cursoemvideo.com",
     usuario: "cursoemvideo.com",
     cor: "teal",
