@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import { LuFileText } from "react-icons/lu";
 import styled from "styled-components";
 
 // Pequeno o bastante para manter os estilos no mesmo arquivo.
@@ -19,6 +20,40 @@ const Container = styled.footer`
     border-radius: 3px;
     background: var(--espectro);
     opacity: 0.7;
+  }
+`;
+
+const Assinatura = styled.span`
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem 1rem;
+`;
+
+// Currículo saiu do topo (não é um site de "procuro emprego"), mas segue visível aqui.
+const Curriculo = styled.a`
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.45rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid var(--borda);
+  background: var(--superficie);
+  color: var(--texto);
+  font-family: var(--fonte-display);
+  font-weight: 700;
+  font-size: 0.9375rem;
+  transition:
+    border-color 0.2s ease,
+    transform 0.2s ease;
+
+  svg {
+    color: var(--verde-forte);
+  }
+
+  &:hover {
+    border-color: var(--verde-forte);
+    transform: translateY(-1px);
   }
 `;
 
@@ -104,7 +139,13 @@ const Rodape = () => {
 
   return (
     <Container>
-      <span>{t("rodape.direitos", { ano: new Date().getFullYear() })}</span>
+      <Assinatura>
+        <span>{t("rodape.direitos", { ano: new Date().getFullYear() })}</span>
+        <Curriculo href={t("curriculoArquivo")} target="_blank" rel="noopener noreferrer">
+          <LuFileText aria-hidden="true" />
+          {t("rodape.curriculo")}
+        </Curriculo>
+      </Assinatura>
       <Feito>
         {t("rodape.feito")}{" "}
         <Segredo tabIndex={0}>

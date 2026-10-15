@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { LuArrowDown, LuDownload, LuMapPin } from "react-icons/lu";
+import { LuArrowDown, LuGamepad2, LuMapPin } from "react-icons/lu";
 
 import Terminal from "../Terminal";
 import { aoClicarAncora } from "../../utils/rolarPara";
@@ -23,9 +23,9 @@ const Hero = () => {
               {t("comum:acoes.verStack")}
               <LuArrowDown aria-hidden="true" />
             </Botao>
-            <Botao href={t("comum:curriculoArquivo")} target="_blank" rel="noopener noreferrer" $secundario>
-              <LuDownload aria-hidden="true" />
-              {t("comum:acoes.baixarCurriculo")}
+            <Botao href="#fora-do-codigo" onClick={aoClicarAncora("fora-do-codigo")} $secundario>
+              <LuGamepad2 aria-hidden="true" />
+              {t("comum:acoes.foraDoCodigo")}
             </Botao>
           </S.Botoes>
           <S.Meta>

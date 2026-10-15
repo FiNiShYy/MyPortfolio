@@ -2,7 +2,7 @@
   "hero": {
     "tag": "Desenvolvedor full stack · Salt Systems",
     "titulo": "Kauã Gabriel",
-    "lead": "Construo APIs, integrações financeiras e agentes de IA para fintechs de crédito e cobrança — do serviço que conversa com o banco à tela onde o cliente negocia.",
+    "lead": "Oi! Eu sou o Kauã, dev full stack em Maringá. Passo os dias construindo APIs, integrações financeiras e agentes de IA para fintechs, e o resto do tempo entre carros, jogos e impressão 3D.",
     "local": "Maringá, PR · em produção desde 2023"
   },
   "terminal": {
@@ -46,7 +46,7 @@
       },
       {
         "tipo": "ok",
-        "texto": "● aberto a boas conversas"
+        "texto": "● em produção (e no Assetto nas horas vagas)"
       }
     ]
   },
@@ -358,13 +358,13 @@
     "rascunho": "rascunho"
   },
   "contato": {
-    "titulo": "Vamos conversar",
-    "sub": "Cada canal mostra um lado diferente meu. Escolha o que for melhor pra você.",
+    "titulo": "Bora trocar uma ideia",
+    "sub": "Seja para falar de código, de carros ou só dar um oi, escolha o canal que preferir.",
     "canais": {
-      "linkedin": "O lado mais profissional: experiência, conquistas e o que ando estudando.",
+      "linkedin": "O lado mais profissional: experiência e o que ando estudando.",
       "github": "Projetos pessoais, estudos e o código deste portfolio.",
       "whatsapp": "O jeito mais rápido de falar comigo.",
-      "email": "Para propostas e conversas com mais calma."
+      "email": "Para conversas mais longas, ou só para dar um oi."
     },
     "whatsappMensagem": "Olá! Vi seu portfólio e gostaria de conversar com você."
   },
