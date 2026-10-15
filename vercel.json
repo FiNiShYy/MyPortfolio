@@ -5,14 +5,14 @@
   "outputDirectory": "dist",
   "redirects": [
     {
-      "source": "/:path*",
+      "source": "/(.*)",
       "missing": [
         {
           "type": "host",
           "value": "cabeludo.dev"
         }
       ],
-      "destination": "https://cabeludo.dev/:path*",
+      "destination": "https://cabeludo.dev/$1",
       "permanent": true
     }
   ],
