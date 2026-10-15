@@ -6,6 +6,9 @@ import Cabecalho from "./components/Cabecalho";
 import Blog from "./components/Blog";
 import Bastidores from "./components/Bastidores";
 import Rodape from "./components/Rodape";
+import PainelAcessibilidade from "./acessibilidade/Painel";
+import { FiltrosSvg } from "./acessibilidade/estilos";
+import { GuiaLeitura, LeitorVoz, VLibras } from "./acessibilidade/ferramentas";
 import Inicio from "./pages/Inicio";
 import { useTitulo } from "./hooks/useTitulo";
 
@@ -33,8 +36,9 @@ function TopoAoNavegar() {
 const App = () => (
   <>
     <TopoAoNavegar />
+    <PainelAcessibilidade />
     <Cabecalho />
-    <main>
+    <main id="conteudo" tabIndex={-1}>
       <Routes>
         <Route path="/" element={<Inicio />} />
         <Route path="/blog" element={<PaginaBlog />} />
@@ -43,6 +47,10 @@ const App = () => (
       </Routes>
     </main>
     <Rodape />
+    <GuiaLeitura />
+    <LeitorVoz />
+    <VLibras />
+    <FiltrosSvg />
   </>
 );
 

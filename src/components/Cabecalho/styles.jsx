@@ -1,5 +1,9 @@
 import styled, { css } from "styled-components";
 
+// Texto ampliado (125%+) pelo painel de acessibilidade: o menu completo não cabe,
+// então vale o mesmo layout do celular.
+const textoGrande = ':is([data-a11y-texto="2"], [data-a11y-texto="3"], [data-a11y-texto="4"])';
+
 export const Container = styled.header`
   position: sticky;
   top: 0;
@@ -48,6 +52,7 @@ export const Nav = styled.nav`
   gap: 1.5rem;
 
   a {
+    white-space: nowrap;
     font-family: var(--fonte-display);
     font-weight: 600;
     color: var(--texto-suave);
@@ -66,6 +71,10 @@ export const Nav = styled.nav`
   }
 
   @media (max-width: 1100px) {
+    display: none;
+  }
+
+  ${textoGrande} & {
     display: none;
   }
 `;
@@ -118,6 +127,10 @@ export const BotaoIcone = styled.button`
 export const Hamburguer = styled(BotaoIcone)`
   display: none;
 
+  ${textoGrande} & {
+    display: inline-grid;
+  }
+
   @media (max-width: 1100px) {
     display: inline-grid;
   }
@@ -153,4 +166,12 @@ export const MenuMobile = styled.nav`
         display: flex;
       `}
   }
+
+  ${(p) =>
+    p.$aberto &&
+    css`
+      ${textoGrande} & {
+        display: flex;
+      }
+    `}
 `;

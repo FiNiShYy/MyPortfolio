@@ -93,6 +93,13 @@
         var tema = localStorage.getItem("tema");
         if (!tema) tema = matchMedia("(prefers-color-scheme: dark)").matches ? "escuro" : "claro";
         document.documentElement.dataset.tema = tema;
+        // Preferências do painel de acessibilidade que mudam o layout (mesma chave de preferencias.js).
+        var a11y = JSON.parse(localStorage.getItem("acessibilidade") || "{}");
+        var html = document.documentElement;
+        if (a11y.texto) html.setAttribute("data-a11y-texto", String(a11y.texto));
+        if (a11y.contraste) html.setAttribute("data-a11y-contraste", "");
+        if (a11y.semAnimacao) html.setAttribute("data-a11y-sem-animacao", "");
+        if (a11y.filtro && a11y.filtro !== "nenhum") html.setAttribute("data-a11y-filtro", a11y.filtro);
       } catch (e) {}
     </script>
   </head>

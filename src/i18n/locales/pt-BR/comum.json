@@ -34,5 +34,36 @@
     "direitos": "© {{ano}} Kauã Gabriel",
     "atualizado": "Última atualização em {{data}}"
   },
-  "curriculoArquivo": "/curriculo-kaua-gabriel.pdf"
+  "curriculoArquivo": "/curriculo-kaua-gabriel.pdf",
+  "acessibilidade": {
+    "abrir": "Opções de acessibilidade",
+    "titulo": "Acessibilidade",
+    "texto": "Tamanho do texto",
+    "diminuir": "Diminuir texto",
+    "aumentar": "Aumentar texto",
+    "ferramentas": "Ferramentas",
+    "opcoes": {
+      "contraste": "Alto contraste",
+      "dislexia": "Fonte para dislexia",
+      "espacamento": "Espaçamento de texto",
+      "links": "Destacar links",
+      "semAnimacao": "Pausar animações",
+      "guia": "Guia de leitura",
+      "cursor": "Cursor grande",
+      "voz": "Leitura em voz alta",
+      "vlibras": "Libras (VLibras)"
+    },
+    "dicaVoz": "Clique em qualquer texto da página para ouvir.",
+    "pararLeitura": "Parar leitura",
+    "filtros": "Filtros de cor",
+    "filtrosNomes": {
+      "nenhum": "Nenhum",
+      "cinza": "Escala de cinza",
+      "protanopia": "Protanopia",
+      "deuteranopia": "Deuteranopia",
+      "tritanopia": "Tritanopia"
+    },
+    "restaurar": "Restaurar padrão",
+    "pular": "Pular para o conteúdo"
+  }
 }

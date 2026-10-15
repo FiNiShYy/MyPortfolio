@@ -16,6 +16,7 @@ export const CURIOSIDADES = [
 export const ROADMAP = [
   { id: "redesign", estado: "feito" },
   { id: "hardcoded", estado: "feito" },
+  { id: "acessibilidade", estado: "feito" },
   { id: "posts", estado: "agora" },
   { id: "banco", estado: "planejado" },
   { id: "painel", estado: "planejado" },

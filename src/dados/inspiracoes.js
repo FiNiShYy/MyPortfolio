@@ -34,8 +34,8 @@ export const INSPIRACOES = [
   {
     id: "rato",
     foto: "/inspiracoes/rato.webp",
-    nome: "Rato Borrachudo",
-    iniciais: "RB",
+    nome: "Douglas Mesquita",
+    iniciais: "DM",
     link: "https://www.youtube.com/@RatoBorrachudo",
     usuario: "@RatoBorrachudo",
     cor: "rosa",

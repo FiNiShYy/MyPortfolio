@@ -275,7 +275,7 @@
         "texto": "Started with a gaming channel and built one of the biggest podcasts in Brazil."
       },
       "rato": {
-        "papel": "Douglas Mesquita",
+        "papel": "Rato Borrachudo",
         "texto": "Years of making content about games, electronics and robotics his own way, without losing authenticity."
       },
       "acf": {
@@ -424,6 +424,7 @@
     "roadmap": {
       "redesign": "Redesign with React 19, Vite and styled-components",
       "hardcoded": "100% hardcoded content in JSON and JS, versioned in git",
+      "acessibilidade": "Accessibility panel: text size, contrast, dyslexia, read aloud, sign language and color filters",
       "posts": "First blog posts, written in Markdown",
       "banco": "Database for posts and content, with its own API",
       "painel": "Admin panel to publish and edit without a commit",

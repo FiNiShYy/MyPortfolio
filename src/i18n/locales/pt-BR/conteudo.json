@@ -275,7 +275,7 @@
         "texto": "Começou com um canal de games e construiu um dos maiores podcasts do Brasil."
       },
       "rato": {
-        "papel": "Douglas Mesquita",
+        "papel": "Rato Borrachudo",
         "texto": "Anos criando conteúdo sobre games, eletrônica e robótica do jeito dele, sem perder a autenticidade."
       },
       "acf": {
@@ -424,6 +424,7 @@
     "roadmap": {
       "redesign": "Redesign com React 19, Vite e styled-components",
       "hardcoded": "Conteúdo 100% hardcoded em JSON e JS, versionado no git",
+      "acessibilidade": "Painel de acessibilidade: texto, contraste, dislexia, voz, Libras e filtros de cor",
       "posts": "Primeiros posts do blog, escritos em Markdown",
       "banco": "Banco de dados para posts e conteúdo, com API própria",
       "painel": "Painel para publicar e editar sem precisar de commit",
