@@ -5,6 +5,7 @@ import { LuMenu, LuMoon, LuSun, LuX } from "react-icons/lu";
 
 import { trocarIdioma } from "../../i18n";
 import { useTema } from "../../hooks/useTema";
+import { aoClicarAncora } from "../../utils/rolarPara";
 import { Botao } from "../ui";
 import * as S from "./styles";
 
@@ -29,13 +30,13 @@ const Cabecalho = () => {
   return (
     <>
       <S.Container $rolou={rolou || menuAberto}>
-        <S.Marca href="#topo" onClick={fecharMenu}>
+        <S.Marca href="#topo" onClick={aoClicarAncora("topo", fecharMenu)}>
           Kauã Gabriel
         </S.Marca>
 
         <S.Nav aria-label="Principal">
           {SECOES.map((id) => (
-            <a key={id} href={`#${id}`}>
+            <a key={id} href={`#${id}`} onClick={aoClicarAncora(id)}>
               {t(`nav.${id}`)}
             </a>
           ))}
@@ -90,7 +91,7 @@ const Cabecalho = () => {
 
       <S.MenuMobile id="menu-mobile" $aberto={menuAberto} aria-label="Menu">
         {SECOES.map((id) => (
-          <a key={id} href={`#${id}`} onClick={fecharMenu}>
+          <a key={id} href={`#${id}`} onClick={aoClicarAncora(id, fecharMenu)}>
             {t(`nav.${id}`)}
           </a>
         ))}

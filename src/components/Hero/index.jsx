@@ -2,6 +2,7 @@ import { useTranslation } from "react-i18next";
 import { LuArrowDown, LuDownload, LuMapPin } from "react-icons/lu";
 
 import Terminal from "../Terminal";
+import { aoClicarAncora } from "../../utils/rolarPara";
 import { Botao, Revelar, Tag } from "../ui";
 import * as S from "./styles";
 
@@ -18,7 +19,7 @@ const Hero = () => {
           <S.Espectro aria-hidden="true" />
           <S.Lead>{t("hero.lead")}</S.Lead>
           <S.Botoes>
-            <Botao href="#stack">
+            <Botao href="#stack" onClick={aoClicarAncora("stack")}>
               {t("comum:acoes.verStack")}
               <LuArrowDown aria-hidden="true" />
             </Botao>
