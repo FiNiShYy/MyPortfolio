@@ -12,37 +12,25 @@ const Inspiracoes = () => {
     <Secao id="inspiracoes" titulo={t("inspiracoes.titulo")} sub={t("inspiracoes.sub")}>
       <S.Grade>
         {INSPIRACOES.map((pessoa, i) => {
-          const avatar = (
-            <S.Iniciais $cor={pessoa.cor} $grande={pessoa.largo} aria-hidden="true">
-              {pessoa.foto ? <img src={pessoa.foto} alt="" loading="lazy" /> : pessoa.iniciais}
-            </S.Iniciais>
-          );
-          const textos = (
-            <>
-              <h3>{pessoa.nome}</h3>
-              <S.Papel $cor={pessoa.cor}>{t(`inspiracoes.itens.${pessoa.id}.papel`)}</S.Papel>
-              <p>{t(`inspiracoes.itens.${pessoa.id}.texto`)}</p>
-            </>
-          );
+          // Sem link (ex.: família), o card é um article comum, sem seta nem hover de link.
+          const propsLink = pessoa.link
+            ? { href: pessoa.link, target: "_blank", rel: "noopener noreferrer", $link: true }
+            : { as: "article" };
           return (
-            <S.Item key={pessoa.id} $destaque={pessoa.destaque} $largo={pessoa.largo}>
+            <S.Item key={pessoa.id} $destaque={pessoa.destaque}>
               <Revelar atraso={(i % 4) * 80}>
-                {pessoa.largo ? (
-                  // Card de linha inteira: avatar ao lado do texto, sem link.
-                  <S.CartaoLargo $cor={pessoa.cor}>
-                    {avatar}
-                    <div>{textos}</div>
-                  </S.CartaoLargo>
-                ) : (
-                  <S.Cartao href={pessoa.link} target="_blank" rel="noopener noreferrer" $cor={pessoa.cor}>
-                    <S.Topo>
-                      {avatar}
-                      <LuArrowUpRight className="seta" aria-hidden="true" />
-                    </S.Topo>
-                    {textos}
-                    <S.Usuario>{pessoa.usuario}</S.Usuario>
-                  </S.Cartao>
-                )}
+                <S.Cartao $cor={pessoa.cor} {...propsLink}>
+                  <S.Topo>
+                    <S.Iniciais $cor={pessoa.cor} aria-hidden="true">
+                      {pessoa.foto ? <img src={pessoa.foto} alt="" loading="lazy" /> : pessoa.iniciais}
+                    </S.Iniciais>
+                    {pessoa.link && <LuArrowUpRight className="seta" aria-hidden="true" />}
+                  </S.Topo>
+                  <h3>{pessoa.nome}</h3>
+                  <S.Papel $cor={pessoa.cor}>{t(`inspiracoes.itens.${pessoa.id}.papel`)}</S.Papel>
+                  <p>{t(`inspiracoes.itens.${pessoa.id}.texto`)}</p>
+                  {pessoa.usuario && <S.Usuario>{pessoa.usuario}</S.Usuario>}
+                </S.Cartao>
               </Revelar>
             </S.Item>
           );
