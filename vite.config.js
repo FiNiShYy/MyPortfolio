@@ -3,7 +3,7 @@ import react from "@vitejs/plugin-react";
 import fs from "node:fs";
 import path from "node:path";
 
-const SITE = "https://my-portfolio-kaua.vercel.app";
+const SITE = "https://cabeludo.dev";
 const PAGINAS = ["/", "/blog", "/bastidores"];
 const dataBuild = new Date().toISOString();
 

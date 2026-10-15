@@ -91,7 +91,7 @@ const OG = `<!doctype html><html><head><meta charset="utf-8"><style>${BASE}
     <h1>Kauã<br>Gabriel</h1>
     <div class="espectro"></div>
     <p>APIs, integrações financeiras e agentes de IA para fintechs de crédito e cobrança.</p>
-    <div class="rodape"><img src="${foto}" alt=""><span>my-portfolio-kaua.vercel.app</span></div>
+    <div class="rodape"><img src="${foto}" alt=""><span>cabeludo.dev</span></div>
   </div>
   <div class="terminal">
     <div class="barra"><i style="background:var(--vivo-vermelho)"></i><i style="background:var(--vivo-ambar)"></i><i style="background:var(--vivo-verde)"></i><span style="margin-left:10px">kaua@dev: ~</span></div>

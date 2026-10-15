@@ -21,7 +21,7 @@ export const ROADMAP = [
   { id: "banco", estado: "planejado" },
   { id: "painel", estado: "planejado" },
   { id: "interacao", estado: "planejado" },
-  { id: "dominio", estado: "planejado" },
+  { id: "dominio", estado: "feito" },
 ];
 
 // Mapa do repositório mostrado no destaque "100% hardcoded".
