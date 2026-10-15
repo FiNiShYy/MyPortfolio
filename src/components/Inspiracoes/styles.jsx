@@ -28,46 +28,6 @@ export const Item = styled.div`
         grid-column: auto;
       }
     `}
-
-  ${(p) =>
-    p.$largo &&
-    css`
-      grid-column: 1 / -1;
-    `}
-`;
-
-// Card de linha inteira (a primeira pessoa da lista): avatar grande ao lado do
-// texto, fundo levemente tingido com a cor dela e sem link.
-export const CartaoLargo = styled.article`
-  display: flex;
-  align-items: center;
-  gap: clamp(1.25rem, 3vw, 2.25rem);
-  height: 100%;
-  padding: clamp(1.5rem, 3vw, 2.25rem);
-  border-radius: var(--radius);
-  border: 1px solid var(--borda);
-  background: linear-gradient(
-    120deg,
-    var(--${(p) => p.$cor}-suave),
-    var(--superficie) 70%
-  );
-
-  h3 {
-    font-size: clamp(1.75rem, 3.5vw, 2.4rem);
-  }
-
-  p {
-    margin-top: 0.75rem;
-    max-width: 44rem;
-    font-size: clamp(1.0625rem, 1.6vw, 1.25rem);
-    line-height: 1.55;
-    color: var(--texto);
-  }
-
-  @media (max-width: 560px) {
-    flex-direction: column;
-    align-items: flex-start;
-  }
 `;
 
 export const Cartao = styled.a`
@@ -83,16 +43,21 @@ export const Cartao = styled.a`
     box-shadow 0.25s ease,
     transform 0.25s ease;
 
-  &:hover {
-    border-color: var(--${(p) => p.$cor}-forte);
-    box-shadow: var(--sombra);
-    transform: translateY(-3px);
-  }
+  /* Hover de link só quando o card leva a algum lugar. */
+  ${(p) =>
+    p.$link &&
+    css`
+      &:hover {
+        border-color: var(--${p.$cor}-forte);
+        box-shadow: var(--sombra);
+        transform: translateY(-3px);
+      }
 
-  &:hover .seta {
-    color: var(--${(p) => p.$cor}-forte);
-    transform: translate(2px, -2px);
-  }
+      &:hover .seta {
+        color: var(--${p.$cor}-forte);
+        transform: translate(2px, -2px);
+      }
+    `}
 
   h3 {
     margin-top: 1.25rem;
@@ -141,15 +106,6 @@ export const Iniciais = styled.span`
     height: 100%;
     object-fit: cover;
   }
-
-  ${(p) =>
-    p.$grande &&
-    css`
-      flex-shrink: 0;
-      width: clamp(5rem, 9vw, 6.5rem);
-      height: clamp(5rem, 9vw, 6.5rem);
-      font-size: clamp(1.6rem, 3vw, 2.1rem);
-    `}
 `;
 
 export const Papel = styled.span`
