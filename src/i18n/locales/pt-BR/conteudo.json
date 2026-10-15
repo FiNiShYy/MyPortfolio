@@ -320,6 +320,10 @@
         "titulo": "Impressão 3D",
         "texto": "Modelar, fatiar, ajustar e imprimir de novo: um ciclo de tentativa e erro que lembra muito depurar código."
       }
+    },
+    "ilustracao": {
+      "alt": "Ilustração do Kauã no computador, cercado de janelas de código e um aviso de erro, com um gato cinza ao lado da mesa",
+      "legenda": "Autorretrato: eu, um erro na tela e o gato de supervisor."
     }
   },
   "contato": {

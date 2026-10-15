@@ -1,16 +1,57 @@
 import styled, { css } from "styled-components";
 
+// Ilustração à esquerda, cards 2×2 à direita; empilha no tablet.
+export const Layout = styled.div`
+  display: grid;
+  grid-template-columns: minmax(18rem, 0.85fr) 2fr;
+  align-items: start;
+  gap: 1.25rem;
+
+  @media (max-width: 1020px) {
+    grid-template-columns: 1fr;
+  }
+`;
+
+// Proporção original da ilustração: recortar comeria o gato na borda.
+export const Ilustracao = styled.figure`
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--radius);
+  border: 1px solid var(--borda);
+  background: var(--superficie);
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  figcaption {
+    padding: 1rem 1.25rem 1.1rem;
+    border-top: 1px solid var(--borda);
+    font-family: var(--fonte-mono);
+    font-size: 0.8125rem;
+    color: var(--texto-suave);
+  }
+
+  /* No desktop acompanha a rolagem ao lado dos cards, que são mais altos. */
+  @media (min-width: 1021px) {
+    position: sticky;
+    top: 6rem;
+  }
+
+  @media (max-width: 1020px) {
+    max-width: 26rem;
+  }
+`;
+
 export const Grade = styled.div`
   display: grid;
-  grid-template-columns: 1.2fr 1.4fr 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
   gap: 1.25rem;
 
   > div {
     height: 100%;
-  }
-
-  @media (max-width: 1100px) {
-    grid-template-columns: repeat(2, 1fr);
   }
 
   @media (max-width: 640px) {

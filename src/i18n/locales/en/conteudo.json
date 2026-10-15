@@ -320,6 +320,10 @@
         "titulo": "3D printing",
         "texto": "Model, slice, tweak and print again: a trial-and-error loop that feels a lot like debugging."
       }
+    },
+    "ilustracao": {
+      "alt": "Illustration of Kauã at the computer, surrounded by code windows and an error message, with a grey cat next to the desk",
+      "legenda": "Self-portrait: me, an error on screen and the cat supervising."
     }
   },
   "contato": {

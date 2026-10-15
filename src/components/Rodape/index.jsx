@@ -38,7 +38,12 @@ const Atualizacao = styled.span`
 `;
 
 // __ULTIMA_ATUALIZACAO__ é injetado pelo Vite (vite.config.js) com a data do build.
-const dataBuild = new Date(__ULTIMA_ATUALIZACAO__);
+// Sem o define (ex.: dev server sem reiniciar), cai na data atual em vez de quebrar a página.
+const dataBuild = new Date(
+  typeof __ULTIMA_ATUALIZACAO__ === "string"
+    ? __ULTIMA_ATUALIZACAO__
+    : Date.now(),
+);
 
 const Rodape = () => {
   const { t, i18n } = useTranslation();
