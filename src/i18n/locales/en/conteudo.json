@@ -386,8 +386,8 @@
         "texto": "All content lives in src/i18n and src/dados. Simple, versioned and fast, but every update needs a deploy."
       },
       "ia": {
-        "titulo": "Built together with AI",
-        "texto": "Made with help from Claude, from the first component to the deploy: reference research, code, verification screenshots and even the resume."
+        "titulo": "A little help from AI",
+        "texto": "Claude helped along the way, speeding up repetitive tasks and acting as a partner to bounce ideas off. The decisions and the care are mine."
       },
       "padrao": {
         "titulo": "Same pattern as at work",

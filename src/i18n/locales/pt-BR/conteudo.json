@@ -386,8 +386,8 @@
         "texto": "O conteúdo inteiro está em src/i18n e src/dados. Simples, versionado e rápido, mas cada atualização exige um deploy."
       },
       "ia": {
-        "titulo": "Feito em dupla com IA",
-        "texto": "Construído com a ajuda do Claude, do primeiro componente ao deploy: pesquisa de referências, código, prints de verificação e até o currículo."
+        "titulo": "Uma mãozinha da IA",
+        "texto": "O Claude ajudou em partes do caminho, agilizando tarefas repetitivas e servindo de parceiro para trocar ideias. As decisões e o capricho são meus."
       },
       "padrao": {
         "titulo": "Mesmo padrão do trabalho",
