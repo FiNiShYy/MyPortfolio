@@ -1,7 +1,7 @@
 module.exports = {
   root: true,
   env: { browser: true, es2020: true },
-  globals: { __ULTIMA_ATUALIZACAO__: "readonly" },
+  globals: { __ULTIMA_ATUALIZACAO__: "readonly", __ESTATISTICAS__: "readonly" },
   extends: [
     "eslint:recommended",
     "plugin:react/recommended",

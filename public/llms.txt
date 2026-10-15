@@ -6,6 +6,12 @@
 
 Este arquivo resume o portfolio https://my-portfolio-kaua.vercel.app para assistentes de IA. O site tem versão em português e inglês.
 
+## Páginas
+
+- [Início](https://my-portfolio-kaua.vercel.app/): stack, o que constrói, projetos, jornada, inspirações e contato.
+- [Blog](https://my-portfolio-kaua.vercel.app/blog): opiniões sobre tecnologia, IA e carreira (primeiros posts em breve).
+- [Bastidores](https://my-portfolio-kaua.vercel.app/bastidores): curiosidades sobre como o site foi feito (hoje 100% hardcoded em JSON/JS, sem backend) e o roadmap até a integração com banco de dados.
+
 ## Sobre
 
 - Cargo: Desenvolvedor Full Stack na Salt Systems (set/2023 — atual)

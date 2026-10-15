@@ -7,7 +7,8 @@
     "blog": "Blog",
     "contato": "Contact",
     "abrirMenu": "Open menu",
-    "fecharMenu": "Close menu"
+    "fecharMenu": "Close menu",
+    "bastidores": "Behind the scenes"
   },
   "acoes": {
     "curriculo": "Resume",

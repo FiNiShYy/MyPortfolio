@@ -44,7 +44,8 @@ export const Marca = styled.a`
 
 export const Nav = styled.nav`
   display: flex;
-  gap: 1.75rem;
+  align-items: center;
+  gap: 1.5rem;
 
   a {
     font-family: var(--fonte-display);
@@ -52,14 +53,27 @@ export const Nav = styled.nav`
     color: var(--texto-suave);
     transition: color 0.2s ease;
 
-    &:hover {
+    &:hover,
+    &.active {
       color: var(--texto);
+    }
+
+    /* Página atual (NavLink): sublinhado com o espectro. */
+    &.active {
+      background: var(--espectro) left bottom / 100% 2px no-repeat;
+      padding-bottom: 2px;
     }
   }
 
-  @media (max-width: 900px) {
+  @media (max-width: 1100px) {
     display: none;
   }
+`;
+
+export const Separador = styled.span`
+  width: 1px;
+  height: 1.1rem;
+  background: var(--borda);
 `;
 
 export const Acoes = styled.div`
@@ -104,7 +118,7 @@ export const BotaoIcone = styled.button`
 export const Hamburguer = styled(BotaoIcone)`
   display: none;
 
-  @media (max-width: 900px) {
+  @media (max-width: 1100px) {
     display: inline-grid;
   }
 `;
@@ -132,7 +146,7 @@ export const MenuMobile = styled.nav`
     }
   }
 
-  @media (max-width: 900px) {
+  @media (max-width: 1100px) {
     ${(p) =>
       p.$aberto &&
       css`
