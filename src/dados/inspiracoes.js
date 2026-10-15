@@ -1,0 +1,70 @@
+// Papel e texto de cada pessoa vêm de conteudo:inspiracoes.itens.<id>.
+// Foto opcional: coloque public/inspiracoes/<id>.webp e defina `foto`;
+// sem foto, o card mostra as iniciais num círculo colorido.
+// `destaque` ocupa duas colunas no grid de quatro.
+export const INSPIRACOES = [
+  {
+    id: "kerber",
+    foto: "/inspiracoes/kerber.webp",
+    nome: "Fabricio Kerber",
+    iniciais: "FK",
+    link: "https://saltsystems.com.br/",
+    usuario: "saltsystems.com.br",
+    cor: "verde",
+    destaque: true,
+  },
+  {
+    id: "akita",
+    foto: "/inspiracoes/akita.webp",
+    nome: "Fabio Akita",
+    iniciais: "FA",
+    link: "https://akitaonrails.com",
+    usuario: "akitaonrails.com",
+    cor: "violeta",
+  },
+  {
+    id: "igor",
+    foto: "/inspiracoes/igor.webp",
+    nome: "Igor 3K",
+    iniciais: "I3",
+    link: "https://www.youtube.com/@FlowPodcast",
+    usuario: "@FlowPodcast",
+    cor: "ambar",
+  },
+  {
+    id: "rato",
+    foto: "/inspiracoes/rato.webp",
+    nome: "Rato Borrachudo",
+    iniciais: "RB",
+    link: "https://www.youtube.com/@RatoBorrachudo",
+    usuario: "@RatoBorrachudo",
+    cor: "rosa",
+  },
+  {
+    id: "acf",
+    foto: "/inspiracoes/acf.webp",
+    nome: "ACF Performance",
+    iniciais: "AC",
+    link: "https://www.youtube.com/@ACFPerformance",
+    usuario: "@ACFPerformance",
+    cor: "azul",
+  },
+  {
+    id: "cev",
+    foto: "/inspiracoes/cev.webp",
+    nome: "Curso em Vídeo",
+    iniciais: "CV",
+    link: "https://www.cursoemvideo.com",
+    usuario: "cursoemvideo.com",
+    cor: "teal",
+  },
+  {
+    id: "mat",
+    foto: "/inspiracoes/mat.webp",
+    nome: "Mat Armstrong",
+    iniciais: "MA",
+    link: "https://www.youtube.com/@MatArmstrongBMX",
+    usuario: "@MatArmstrongBMX",
+    cor: "ambar",
+  },
+];

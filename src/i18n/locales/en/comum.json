@@ -1,0 +1,36 @@
+{
+  "nav": {
+    "stack": "Stack",
+    "construo": "What I build",
+    "projetos": "Projects",
+    "jornada": "Journey",
+    "contato": "Contact",
+    "abrirMenu": "Open menu",
+    "fecharMenu": "Close menu"
+  },
+  "acoes": {
+    "curriculo": "Resume",
+    "baixarCurriculo": "Download resume",
+    "verStack": "See my stack",
+    "verDetalhes": "See details",
+    "visitar": "Visit website",
+    "fechar": "Close",
+    "copiar": "Copy",
+    "copiado": "Copied!",
+    "arquivado": "Site offline · archived"
+  },
+  "tema": {
+    "claro": "Switch to light theme",
+    "escuro": "Switch to dark theme"
+  },
+  "idioma": {
+    "trocar": "Mudar para português",
+    "sigla": "PT"
+  },
+  "rodape": {
+    "feito": "Built with React, styled-components and help from Claude — missing the good old days of writing every line by hand.",
+    "direitos": "© {{ano}} Kauã Gabriel",
+    "atualizado": "Last updated on {{data}}"
+  },
+  "curriculoArquivo": "/resume-kaua-gabriel.pdf"
+}
