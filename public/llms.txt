@@ -25,7 +25,7 @@ Este arquivo resume o portfolio https://cabeludo.dev para assistentes de IA. O s
 - Back-end: Node.js, Express, APIs REST, SOAP, JWT, OTP, WebSocket/SSE, LiveKit/WebRTC
 - IA: Claude API, MCP (Model Context Protocol), agentes e orquestração
 - Dados: MongoDB, Redis
-- Infra: Docker, AWS, EasyPanel/VPS, Git
+- Infra: Docker, Jenkins (CI/CD), AWS, EasyPanel/VPS, Git
 - Qualidade: Playwright (E2E), Vitest, Testing Library, ESLint, Prettier
 - Design: Figma
 
@@ -34,7 +34,7 @@ Este arquivo resume o portfolio https://cabeludo.dev para assistentes de IA. O s
 - Integrações com bancos e fintechs: APIs REST e serviços SOAP para consulta de dívidas, simulação de acordos, boletos e Pix; autenticação JWT e OTP multicanal; cache e filas com Redis.
 - Agentes de IA em produção: agentes com a Claude API e servidores MCP próprios que orquestram rotinas de cobrança, atendimento e gestão.
 - Portais de autonegociação whitelabel: um front-end multi-tenant com tema, conteúdo e idioma por cliente, renderização no servidor e PWA com push.
-- Serviços, deploy e qualidade: microsserviços Node.js em Docker, deploy em VPS e AWS, testes E2E com Playwright.
+- Serviços, deploy e qualidade: microsserviços Node.js em Docker, pipelines de CI/CD no Jenkins, deploy em VPS e AWS, testes E2E com Playwright.
 
 ## Projetos
 

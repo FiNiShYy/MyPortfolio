@@ -72,7 +72,7 @@
       },
       "infra": {
         "titulo": "Infra & Deploy",
-        "texto": "Containerized services shipped to the cloud and to VPSs."
+        "texto": "Containerized services shipped to the cloud and to VPSs through CI/CD pipelines."
       },
       "qualidade": {
         "titulo": "Quality",
@@ -127,6 +127,7 @@
         "texto": "Node.js microservices packaged with Docker, with end-to-end journey tests running before every release.",
         "pontos": [
           "Docker + deploys to VPS and AWS",
+          "CI/CD pipelines with Jenkins",
           "Playwright E2E and unit tests",
           "ESLint and Prettier as the baseline"
         ],

@@ -72,7 +72,7 @@
       },
       "infra": {
         "titulo": "Infra & Deploy",
-        "texto": "Serviços empacotados em containers e publicados em nuvem e VPS."
+        "texto": "Serviços empacotados em containers e publicados em nuvem e VPS por pipelines de CI/CD."
       },
       "qualidade": {
         "titulo": "Qualidade",
@@ -127,6 +127,7 @@
         "texto": "Microsserviços em Node.js empacotados em Docker, com testes de jornada ponta a ponta rodando antes de cada publicação.",
         "pontos": [
           "Docker + deploy em VPS e AWS",
+          "Pipelines de CI/CD com Jenkins",
           "Playwright E2E e testes unitários",
           "ESLint e Prettier como padrão"
         ],
