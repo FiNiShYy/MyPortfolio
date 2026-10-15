@@ -18,6 +18,7 @@ npm run dev      # http://localhost:5173
 npm run build    # gera dist/
 npm run lint
 npm run curriculo  # regera os PDFs de currículo (PT/EN) em public/ usando o Edge/Chrome instalado
+npm run marca      # regera favicon, ícones e a imagem de compartilhamento (og.png)
 ```
 
 ## Onde editar o conteúdo
