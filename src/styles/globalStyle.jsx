@@ -1,7 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 
 /*
- * Tokens por papel, no mesmo vocabulário do portal-whitelabel: componente
+ * Tokens por papel, no vocabulário que uso no dia a dia: componente
  * nunca usa cor solta, só var(--papel). O tema escuro troca os valores aqui
  * via [data-tema="escuro"] no <html> (setado no index.html antes do paint).
  *

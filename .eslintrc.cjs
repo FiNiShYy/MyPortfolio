@@ -17,7 +17,7 @@ module.exports = {
     "react/self-closing-comp": "error",
     "react-refresh/only-export-components": ["warn", { allowConstantExport: true }],
     eqeqeq: ["warn", "always", { null: "ignore" }],
-    // Mesmo guarda-corpo do portal-whitelabel: estilo mora no styles.jsx.
+    // Guarda-corpo de estilo: estilo mora no styles.jsx.
     // Valor dinâmico vai por $prop ou custom property (style={{ "--x": v }}),
     // marcado com `// inline-dinamico:` no eslint-disable.
     "no-restricted-syntax": [

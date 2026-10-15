@@ -390,8 +390,8 @@
         "texto": "Claude helped along the way, speeding up repetitive tasks and acting as a partner to bounce ideas off. The decisions and the care are mine."
       },
       "padrao": {
-        "titulo": "Same pattern as at work",
-        "texto": "Follows the styling pattern of Salt's white-label portal: role-based CSS tokens, styled-components and a styles.jsx next to each component."
+        "titulo": "Same conventions as my day job",
+        "texto": "Follows the same conventions I use day to day: role-based CSS tokens, styled-components and a styles.jsx next to each component."
       },
       "gato": {
         "titulo": "The cat survived",
