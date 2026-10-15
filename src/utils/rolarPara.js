@@ -1,10 +1,13 @@
-// Rola suavemente até a seção sem gravar "#id" na URL nem no histórico.
+import { animacoesPausadas } from "../acessibilidade/preferencias";
+
+// Rola até a seção sem gravar "#id" na URL nem no histórico.
 // O deslocamento do cabeçalho fixo vem do scroll-padding-top do <html>.
-export function rolarPara(id) {
+// `instantaneo` é para troca de página: pula direto, sem animação.
+export function rolarPara(id, { instantaneo = false } = {}) {
   const alvo = document.getElementById(id);
   if (!alvo) return;
-  const poucoMovimento = window.matchMedia?.("(prefers-reduced-motion: reduce)").matches;
-  alvo.scrollIntoView({ behavior: poucoMovimento ? "auto" : "smooth", block: "start" });
+  const suave = !instantaneo && !animacoesPausadas();
+  alvo.scrollIntoView({ behavior: suave ? "smooth" : "instant", block: "start" });
 }
 
 // Handler para <a href="#id">: mantém o link semântico (ctrl/meio-clique

@@ -18,11 +18,16 @@ const Inicio = () => {
   const navegar = useNavigate();
 
   // Chegando de outra página pelo menu (state.secao) ou por link com #secao:
-  // rola até a seção e limpa a URL, que fica sempre sem hash.
+  // pula até a seção e limpa a URL, que fica sempre sem hash. A home acabou de
+  // montar e o layout ainda assenta (imagens, fontes), então confere de novo logo
+  // depois para não parar alguns pixels fora.
+  // Sem cleanup de propósito: o replace abaixo limpa o state e re-executa o
+  // efeito, e um cleanup cancelaria a rolagem antes de acontecer.
   useEffect(() => {
     const alvo = state?.secao || hash.slice(1);
     if (!alvo) return;
-    requestAnimationFrame(() => rolarPara(alvo));
+    requestAnimationFrame(() => rolarPara(alvo, { instantaneo: true }));
+    setTimeout(() => rolarPara(alvo, { instantaneo: true }), 400);
     navegar(pathname, { replace: true, state: null });
   }, [state, hash, pathname, navegar]);
 
