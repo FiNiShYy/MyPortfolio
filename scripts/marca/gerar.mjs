@@ -101,7 +101,7 @@ const OG = `<!doctype html><html><head><meta charset="utf-8"><style>${BASE}
       <div class="saida">mongodb · redis · docker</div>
       <div class="saida">claude api · mcp · livekit</div>
       <div class="cmd">status</div>
-      <div class="ok">● aberto a boas conversas</div>
+      <div class="ok">● em produção</div>
     </div>
   </div>
 </div></body></html>`;
