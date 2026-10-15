@@ -326,6 +326,32 @@
       "legenda": "Self-portrait: me, an error on screen and the cat supervising."
     }
   },
+  "blog": {
+    "titulo": "Blog",
+    "sub": "Opinions, lessons and loose ideas about technology, AI, career and whatever else comes up along the way.",
+    "estado": "coming soon",
+    "destaqueTitulo": "Taking shape",
+    "destaqueTexto": "The first posts are still in the oven. Unfiltered opinions coming soon, right here.",
+    "terminal": [
+      {
+        "tipo": "cmd",
+        "texto": "ls posts/"
+      },
+      {
+        "tipo": "saida",
+        "texto": "total 0"
+      },
+      {
+        "tipo": "cmd",
+        "texto": "git status"
+      },
+      {
+        "tipo": "ok",
+        "texto": "● drafts in progress"
+      }
+    ],
+    "rascunho": "draft"
+  },
   "contato": {
     "titulo": "Let's talk",
     "sub": "Each channel shows a different side of me. Pick whatever works best for you.",

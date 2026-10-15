@@ -13,7 +13,7 @@ const Contato = () => {
       : canal.href;
 
   return (
-    <Secao id="contato" titulo={t("contato.titulo")} sub={t("contato.sub")}>
+    <Secao id="contato" titulo={t("contato.titulo")} sub={t("contato.sub")} tinta>
       <S.Grade>
         {CANAIS.map((canal, i) => {
           const { id, nome, usuario, Icone, cor } = canal;
