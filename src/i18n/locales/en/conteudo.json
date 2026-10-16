@@ -290,6 +290,24 @@
           "Admin panel",
           "Compare players"
         ]
+      },
+      "vito": {
+        "tipo": "Health system",
+        "titulo": "Vito",
+        "resumo": "A family-health system that organizes people, households and clinical conditions into an interactive McGoldrick genogram. It shows a whole family's health history and relationships at a glance.",
+        "detalhes": [
+          "McGoldrick clinical genogram built from scratch: generational layout, unions, emotional relationships with their own line styles (zigzag, double line, cutoff, abuse arrow) and a zoomable minimap",
+          "Family health alerts computed from kinship: conditions of parents, children and siblings show up on each person's record",
+          "Step-by-step registration with Zod validation (including CPF), an Express API guarded by Supabase Auth tokens, and RLS on Postgres"
+        ],
+        "telas": [
+          "Family genogram",
+          "Record with family health alerts",
+          "Kinship and emotional relationships",
+          "People search",
+          "Step-by-step registration",
+          "Login"
+        ]
       }
     }
   },

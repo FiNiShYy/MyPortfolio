@@ -290,6 +290,24 @@
           "Painel admin",
           "Comparar participantes"
         ]
+      },
+      "vito": {
+        "tipo": "Sistema de saúde",
+        "titulo": "Vito",
+        "resumo": "Sistema de saúde familiar que organiza pessoas, domicílios e condições clínicas em um genetograma interativo no padrão McGoldrick. Mostra de relance o histórico de saúde e as relações de uma família inteira.",
+        "detalhes": [
+          "Genetograma clínico McGoldrick desenhado do zero: layout por gerações, uniões, relações emocionais com traço próprio (zigue-zague, linha dupla, rompimento, seta de abuso) e minimapa com zoom",
+          "Alertas de saúde familiar calculados pelo parentesco: condições de pais, filhos e irmãos aparecem na ficha de cada pessoa",
+          "Cadastro em etapas com validação Zod (inclusive CPF), API Express protegida por token do Supabase Auth e RLS no Postgres"
+        ],
+        "telas": [
+          "Genetograma da família",
+          "Ficha com alertas de saúde familiar",
+          "Relações de parentesco e emocionais",
+          "Busca de pessoas",
+          "Cadastro em etapas",
+          "Login"
+        ]
       }
     }
   },

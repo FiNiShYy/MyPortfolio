@@ -28,6 +28,23 @@ export const PROJETOS = [
     stack: ["Shopify"],
   },
   {
+    id: "vito",
+    imagem: "/projetos/vito/01-genetograma.webp",
+    imagens: [
+      "/projetos/vito/01-genetograma.webp",
+      "/projetos/vito/02-ficha.webp",
+      "/projetos/vito/03-relacoes.webp",
+      "/projetos/vito/04-pessoas.webp",
+      "/projetos/vito/05-cadastro.webp",
+      "/projetos/vito/06-login.webp",
+    ],
+    link: null,
+    privado: true,
+    cor: "azul",
+    stack: ["React", "Express", "Prisma", "Supabase", "Stitches"],
+    destaque: true,
+  },
+  {
     id: "centavo",
     imagem: "/projetos/centavo/01-visao-geral.webp",
     imagens: [
@@ -42,7 +59,6 @@ export const PROJETOS = [
     privado: true,
     cor: "rosa",
     stack: ["Next.js", "MongoDB", "Recharts", "2FA"],
-    destaque: true,
   },
   {
     id: "ana",
@@ -57,7 +73,7 @@ export const PROJETOS = [
     ],
     link: null,
     privado: true,
-    cor: "azul",
+    cor: "teal",
     stack: ["Next.js", "TypeScript", "Tailwind", "Supabase", "Gemini"],
   },
   {
@@ -73,9 +89,8 @@ export const PROJETOS = [
     ],
     link: null,
     privado: true,
-    cor: "verde",
+    cor: "ambar",
     stack: ["React", "Express", "MongoDB", "Web Push"],
-    destaque: true,
   },
   {
     id: "salt",
