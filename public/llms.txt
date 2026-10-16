@@ -39,6 +39,7 @@ Este arquivo resume o portfolio https://cabeludo.dev para assistentes de IA. O s
 ## Projetos
 
 - [Tino](https://tino.systems): plataforma SaaS de gestão de trabalho e comunicação de equipe com assistente de IA. Kauã conduziu a migração do painel para React + Vite: chamadas com LiveKit, voz por WebSocket, presença por SSE, escritório virtual em canvas e páginas públicas com SSR.
+- [Caprioli Relógios](https://capriolirelogios.com.br): e-commerce de relógios na Shopify, projeto paralelo em andamento.
 - [Portal Salt Systems](https://saltsystems.com.br/): redesenho do portal institucional da empresa.
 - [CEACC](https://portal-confederacao.vercel.app): portal de uma confederação de tiro esportivo, feito em Astro.
 - [Portal Salt Systems v1](https://portal-salt.vercel.app/): primeira versão do portal, em HTML, CSS e JavaScript.

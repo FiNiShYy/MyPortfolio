@@ -13,6 +13,13 @@ export const PROJETOS = [
     destaque: true,
   },
   {
+    id: "caprioli",
+    imagem: "/projetos/caprioli.webp",
+    link: "https://capriolirelogios.com.br",
+    cor: "ambar",
+    stack: ["Shopify"],
+  },
+  {
     id: "salt",
     imagem: "/projetos/portal-salt.webp",
     link: "https://saltsystems.com.br/",
