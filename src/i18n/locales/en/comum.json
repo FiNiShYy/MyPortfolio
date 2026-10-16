@@ -20,7 +20,10 @@
     "copiar": "Copy",
     "copiado": "Copied!",
     "arquivado": "Site offline · archived",
-    "foraDoCodigo": "Off the clock"
+    "foraDoCodigo": "Off the clock",
+    "anterior": "Previous image",
+    "proxima": "Next image",
+    "privado": "Private project · login only"
   },
   "tema": {
     "claro": "Switch to light theme",

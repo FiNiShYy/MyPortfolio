@@ -20,7 +20,10 @@
     "copiar": "Copiar",
     "copiado": "Copiado!",
     "arquivado": "Site fora do ar · arquivado",
-    "foraDoCodigo": "Fora do código"
+    "foraDoCodigo": "Fora do código",
+    "anterior": "Imagem anterior",
+    "proxima": "Próxima imagem",
+    "privado": "Projeto privado · acesso por login"
   },
   "tema": {
     "claro": "Ativar tema claro",

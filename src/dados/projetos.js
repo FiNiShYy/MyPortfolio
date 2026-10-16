@@ -2,6 +2,8 @@
 // conteudo:projetos.itens.<id>. Aqui fica só o que não muda com o idioma.
 // `link: null` = site fora do ar: o card mostra o selo "arquivado" no lugar do botão.
 // `destaque` ocupa duas colunas (mantém as linhas da grade completas).
+// `imagens` (opcional) vira carrossel no modal; legendas em conteudo:projetos.itens.<id>.telas.
+// `privado: true` + `link: null` = sistema com login: selo "privado" no lugar de "arquivado".
 // `stack` lista apenas o que foi confirmado; deixe vazio quando não souber.
 export const PROJETOS = [
   {
@@ -14,10 +16,66 @@ export const PROJETOS = [
   },
   {
     id: "caprioli",
-    imagem: "/projetos/caprioli.webp",
+    imagem: "/projetos/caprioli/01-inicio.webp",
+    imagens: [
+      "/projetos/caprioli/01-inicio.webp",
+      "/projetos/caprioli/02-vitrine.webp",
+      "/projetos/caprioli/03-colecao.webp",
+      "/projetos/caprioli/04-produto.webp",
+    ],
     link: "https://capriolirelogios.com.br",
     cor: "ambar",
     stack: ["Shopify"],
+  },
+  {
+    id: "centavo",
+    imagem: "/projetos/centavo/01-visao-geral.webp",
+    imagens: [
+      "/projetos/centavo/01-visao-geral.webp",
+      "/projetos/centavo/02-tema-kuromi.webp",
+      "/projetos/centavo/03-lancamentos-em-massa.webp",
+      "/projetos/centavo/04-importar-ofx.webp",
+      "/projetos/centavo/05-novo-lancamento.webp",
+      "/projetos/centavo/06-admin-aprovacao.webp",
+    ],
+    link: null,
+    privado: true,
+    cor: "rosa",
+    stack: ["Next.js", "MongoDB", "Recharts", "2FA"],
+    destaque: true,
+  },
+  {
+    id: "ana",
+    imagem: "/projetos/ana/01-resumos.webp",
+    imagens: [
+      "/projetos/ana/01-resumos.webp",
+      "/projetos/ana/02-pagina-publicada.webp",
+      "/projetos/ana/03-upload.webp",
+      "/projetos/ana/04-convites.webp",
+      "/projetos/ana/05-gerar-com-ia.webp",
+      "/projetos/ana/06-quem-ve.webp",
+    ],
+    link: null,
+    privado: true,
+    cor: "azul",
+    stack: ["Next.js", "TypeScript", "Tailwind", "Supabase", "Gemini"],
+  },
+  {
+    id: "bolao",
+    imagem: "/projetos/bolao/01-ranking.webp",
+    imagens: [
+      "/projetos/bolao/01-ranking.webp",
+      "/projetos/bolao/02-ao-vivo.webp",
+      "/projetos/bolao/03-dashboard.webp",
+      "/projetos/bolao/04-chaveamento.webp",
+      "/projetos/bolao/05-admin.webp",
+      "/projetos/bolao/06-comparar.webp",
+    ],
+    link: null,
+    privado: true,
+    cor: "verde",
+    stack: ["React", "Express", "MongoDB", "Web Push"],
+    destaque: true,
   },
   {
     id: "salt",
