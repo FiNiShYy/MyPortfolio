@@ -151,6 +151,16 @@
           "Estado com Zustand e TanStack Query; testes com Vitest e Testing Library"
         ]
       },
+      "caprioli": {
+        "tipo": "E-commerce",
+        "titulo": "Caprioli Relógios",
+        "resumo": "Loja virtual de relógios feita na Shopify. Projeto paralelo, ainda em andamento.",
+        "detalhes": [
+          "Loja montada e personalizada na Shopify",
+          "Vitrine por estilo: dia a dia, esporte, mergulho e social",
+          "Parcelamento em até 12 vezes e atendimento pelo WhatsApp"
+        ]
+      },
       "fci": {
         "tipo": "Site institucional",
         "titulo": "FCI Viagens",

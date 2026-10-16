@@ -151,6 +151,16 @@
           "State with Zustand and TanStack Query; tests with Vitest and Testing Library"
         ]
       },
+      "caprioli": {
+        "tipo": "E-commerce",
+        "titulo": "Caprioli Relógios",
+        "resumo": "Online watch store built on Shopify. A side project, still in progress.",
+        "detalhes": [
+          "Store set up and customized on Shopify",
+          "Catalog by style: everyday, sport, diving and dress",
+          "Up to 12 installments and support over WhatsApp"
+        ]
+      },
       "fci": {
         "tipo": "Company website",
         "titulo": "FCI Viagens",
