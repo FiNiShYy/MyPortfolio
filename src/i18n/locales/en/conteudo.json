@@ -159,6 +159,12 @@
           "Store set up and customized on Shopify",
           "Catalog by style: everyday, sport, diving and dress",
           "Up to 12 installments and support over WhatsApp"
+        ],
+        "telas": [
+          "Home: shop by style",
+          "Product showcase",
+          "Catalog with filters",
+          "Product page"
         ]
       },
       "fci": {
@@ -229,6 +235,60 @@
           "Components and props",
           "State with hooks",
           "Controlled forms"
+        ]
+      },
+      "centavo": {
+        "tipo": "Finance app",
+        "titulo": "Centavo",
+        "resumo": "Multi-user finance tracker built with Next.js and MongoDB, with invite- or approval-only access and 2FA. It combines OFX statement import, charts and four banking-app-style themes.",
+        "detalhes": [
+          "Required 2FA login, versioned sessions (changing the password kills old sessions) and rate limiting per user and per IP",
+          "OFX statement import with bank detection, category and payment suggestions, and FITID-based deduplication",
+          "Four dark-first themes, savings tracked apart from the available balance, and bulk transaction editing"
+        ],
+        "telas": [
+          "Overview: KPIs and charts",
+          "Kuromi theme",
+          "Bulk transaction editing",
+          "OFX statement import",
+          "New transaction",
+          "Admin: account approval"
+        ]
+      },
+      "ana": {
+        "tipo": "Study platform",
+        "titulo": "Resumos da Ana",
+        "resumo": "A platform for publishing study notes: an admin drops in an .html file (or has AI build one from a PDF) and it becomes a page with a link. Classmates join by invite and only read what they were given access to.",
+        "detalhes": [
+          "Published pages isolated by CSP (connect-src 'none'): the uploaded HTML's JavaScript can't reach the dashboard API",
+          "RLS on every table with zero policies; all access goes through server route handlers, with the session in an httpOnly cookie",
+          "Per-subject or per-page access, 2FA for admins and versioning when a file is replaced"
+        ],
+        "telas": [
+          "Study dashboard",
+          "Published page with flashcards",
+          "Drag-and-drop upload",
+          "Invites and accounts",
+          "AI study page from a PDF",
+          "Who sees each page"
+        ]
+      },
+      "bolao": {
+        "tipo": "Web app",
+        "titulo": "Bolão Copa 2026",
+        "resumo": "A 2026 World Cup betting pool among friends, with per-match guesses, a real-time leaderboard and live match tracking.",
+        "detalhes": [
+          "Points per phase plus a champion pick; every guess is HMAC-signed against tampering",
+          "Results synced from football-data.org and a live scoreboard with goals, cards and an \"if it ended now\" projection",
+          "Web Push goal alerts, interactive bracket, player comparison and an admin panel with Excel export"
+        ],
+        "telas": [
+          "Leaderboard with podium",
+          "Live match",
+          "Player dashboard",
+          "Knockout bracket",
+          "Admin panel",
+          "Compare players"
         ]
       }
     }

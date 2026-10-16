@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import { LuArrowUpRight, LuX } from "react-icons/lu";
 
 import { Botao, Chip, Tag } from "../ui";
+import Carrossel from "./Carrossel";
 import * as S from "./styles";
 
 // <dialog> nativo: foco preso, Esc fecha e o backdrop vem de graça.
@@ -30,7 +31,15 @@ const ProjetoModal = ({ projeto, aoFechar }) => {
           <S.Fechar type="button" onClick={aoFechar} aria-label={t("comum:acoes.fechar")}>
             <LuX />
           </S.Fechar>
-          <S.ImagemModal src={projeto.imagem} alt="" />
+          {projeto.imagens ? (
+            <Carrossel
+              key={projeto.id}
+              imagens={projeto.imagens}
+              legendas={t(`${chave}.telas`, { returnObjects: true, defaultValue: [] })}
+            />
+          ) : (
+            <S.ImagemModal src={projeto.imagem} alt="" />
+          )}
           <S.ConteudoModal $cor={projeto.cor}>
             <Tag $cor={projeto.cor}>{t(`${chave}.tipo`)}</Tag>
             <h3 id="projeto-titulo">{t(`${chave}.titulo`)}</h3>
@@ -47,7 +56,7 @@ const ProjetoModal = ({ projeto, aoFechar }) => {
                   <LuArrowUpRight aria-hidden="true" />
                 </Botao>
               ) : (
-                <Chip>{t("comum:acoes.arquivado")}</Chip>
+                <Chip>{t(projeto.privado ? "comum:acoes.privado" : "comum:acoes.arquivado")}</Chip>
               )}
               {projeto.stack.map((s) => (
                 <Chip key={s}>{s}</Chip>

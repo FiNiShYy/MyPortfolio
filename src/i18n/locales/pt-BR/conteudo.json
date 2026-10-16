@@ -159,6 +159,12 @@
           "Loja montada e personalizada na Shopify",
           "Vitrine por estilo: dia a dia, esporte, mergulho e social",
           "Parcelamento em até 12 vezes e atendimento pelo WhatsApp"
+        ],
+        "telas": [
+          "Início: escolha por estilo",
+          "Vitrine de produtos",
+          "Catálogo com filtros",
+          "Página do produto"
         ]
       },
       "fci": {
@@ -229,6 +235,60 @@
           "Componentização e props",
           "Estado com hooks",
           "Formulários controlados"
+        ]
+      },
+      "centavo": {
+        "tipo": "App financeiro",
+        "titulo": "Centavo",
+        "resumo": "App de controle financeiro multiusuário em Next.js e MongoDB, com acesso só por convite ou aprovação e 2FA. Junta importação de faturas OFX, gráficos e quatro temas com visual de app de banco.",
+        "detalhes": [
+          "Login com 2FA obrigatório, sessões versionadas (trocar a senha derruba as sessões antigas) e rate limit por usuário e por IP",
+          "Importação de faturas OFX com detecção de banco, sugestão de categoria e pagamento, e deduplicação por FITID",
+          "Quatro temas dark-first, reserva separada do saldo disponível e edição de lançamentos em lote"
+        ],
+        "telas": [
+          "Visão geral: KPIs e gráficos",
+          "Tema Kuromi",
+          "Edição de lançamentos em lote",
+          "Importação de fatura OFX",
+          "Novo lançamento",
+          "Admin: aprovação de contas"
+        ]
+      },
+      "ana": {
+        "tipo": "Plataforma de estudo",
+        "titulo": "Resumos da Ana",
+        "resumo": "Plataforma para publicar resumos de estudo: quem administra arrasta um .html (ou gera um a partir de um PDF com IA) e ele vira uma página com link. Os colegas entram por convite e só leem o que foi liberado para eles.",
+        "detalhes": [
+          "Páginas publicadas isoladas por CSP (connect-src 'none'): o JS do HTML enviado não alcança a API do painel",
+          "RLS em todas as tabelas sem policies; todo acesso passa por route handlers no servidor, com sessão em cookie httpOnly",
+          "Acesso por disciplina ou por página, 2FA para admins e versionamento ao substituir arquivos"
+        ],
+        "telas": [
+          "Painel de resumos",
+          "Resumo publicado com flashcards",
+          "Upload por arrastar",
+          "Convites e contas",
+          "Gerar resumo com IA a partir de PDF",
+          "Quem vê cada página"
+        ]
+      },
+      "bolao": {
+        "tipo": "App web",
+        "titulo": "Bolão Copa 2026",
+        "resumo": "Bolão da Copa do Mundo 2026 entre amigos, com palpites por jogo, ranking em tempo real e acompanhamento ao vivo das partidas.",
+        "detalhes": [
+          "Pontuação por fase e palpite de campeão; cada palpite é assinado com HMAC contra adulteração",
+          "Resultados sincronizados com football-data.org e placar ao vivo com gols, cartões e projeção \"se acabasse agora\"",
+          "Push de gol (Web Push), chaveamento interativo, comparação entre participantes e admin com exportação em Excel"
+        ],
+        "telas": [
+          "Ranking com pódio",
+          "Jogo ao vivo",
+          "Painel do participante",
+          "Chaveamento do mata-mata",
+          "Painel admin",
+          "Comparar participantes"
         ]
       }
     }

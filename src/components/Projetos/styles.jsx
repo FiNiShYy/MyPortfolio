@@ -176,6 +176,96 @@ export const ImagemModal = styled.img`
   border-bottom: 1px solid var(--borda);
 `;
 
+export const Carrossel = styled.div`
+  position: relative;
+  border-bottom: 1px solid var(--borda);
+`;
+
+export const Faixa = styled.div`
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  figure {
+    position: relative;
+    flex: 0 0 100%;
+    margin: 0;
+    scroll-snap-align: start;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    object-position: top;
+  }
+
+  figcaption {
+    position: absolute;
+    left: 0.85rem;
+    bottom: 0.85rem;
+    padding: 0.3rem 0.6rem;
+    border-radius: 0.4rem;
+    background: oklch(16% 0.05 285 / 0.75);
+    color: white;
+    font-family: var(--fonte-mono);
+    font-size: 0.8rem;
+  }
+`;
+
+export const SetaCarrossel = styled.button`
+  position: absolute;
+  top: 50%;
+  ${(p) => (p.$lado === "esquerda" ? "left" : "right")}: 0.85rem;
+  display: grid;
+  place-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background: var(--superficie);
+  border: 1px solid var(--borda);
+  transform: translateY(-50%);
+  transition: opacity 0.2s;
+
+  &:disabled {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  svg {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+`;
+
+export const Pontos = styled.div`
+  position: absolute;
+  right: 0.85rem;
+  bottom: 0.85rem;
+  display: flex;
+  gap: 0.4rem;
+
+  button {
+    width: 0.55rem;
+    height: 0.55rem;
+    padding: 0;
+    border-radius: 50%;
+    border: 1px solid white;
+    background: oklch(100% 0 0 / 0.35);
+  }
+
+  button[aria-current="true"] {
+    background: white;
+  }
+`;
+
 export const ConteudoModal = styled.div`
   padding: clamp(1.5rem, 4vw, 2.5rem);
 
