@@ -7,6 +7,7 @@ import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import { trocarIdioma } from "../../i18n";
 import { useTema } from "../../hooks/useTema";
 import { rolarPara } from "../../utils/rolarPara";
+import { Botao } from "../ui";
 import * as S from "./styles";
 
 // Seções da home (rolagem) e páginas próprias (rota).
@@ -96,6 +97,15 @@ const Cabecalho = () => {
           >
             {tema === "escuro" ? <LuSun /> : <LuMoon />}
           </S.BotaoIcone>
+          <Botao
+            className="curriculo"
+            href={t("curriculoArquivo")}
+            target="_blank"
+            rel="noopener noreferrer"
+            $pequeno
+          >
+            {t("acoes.curriculo")}
+          </Botao>
           <S.Hamburguer
             type="button"
             onClick={() => setMenuAberto((v) => !v)}

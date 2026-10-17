@@ -56,27 +56,27 @@
     "grupos": {
       "front": {
         "titulo": "Front-end",
-        "texto": "Responsive, multilingual interfaces with per-client branding."
+        "texto": "Components, state, styling and translation."
       },
       "back": {
         "titulo": "Back-end & APIs",
-        "texto": "Services that connect collection platforms to banks and payment providers, plus real-time features like calls and live presence."
+        "texto": "APIs, authentication and real-time communication."
       },
       "ia": {
         "titulo": "AI & Agents",
-        "texto": "Agents that do real work, with custom tools exposed through MCP."
+        "texto": "Models and the protocol that gives agents their tools."
       },
       "dados": {
         "titulo": "Data",
-        "texto": "Document storage, caching and queues."
+        "texto": "Documents, cache and queues."
       },
       "infra": {
         "titulo": "Infra & Deploy",
-        "texto": "Containerized services shipped to the cloud and to VPSs through CI/CD pipelines."
+        "texto": "Containers, pipelines and servers."
       },
       "qualidade": {
         "titulo": "Quality",
-        "texto": "End-to-end journey tests and consistent code before every deploy."
+        "texto": "End-to-end and unit tests, plus consistent code."
       },
       "design": {
         "titulo": "Design",
@@ -137,7 +137,7 @@
   },
   "projetos": {
     "titulo": "Projects",
-    "sub": "Public websites and portals I worked on — from my first steps to client projects.",
+    "sub": "From my first published site to full systems: client portals, platforms and personal projects.",
     "itens": {
       "tino": {
         "tipo": "SaaS platform",
@@ -332,13 +332,13 @@
       },
       {
         "periodo": "2025",
-        "titulo": "Back-end and integrations",
-        "texto": "Node.js and Express in production: settlement APIs and integrations with banks, payment providers and SOAP services."
+        "titulo": "From front end to back end",
+        "texto": "I start owning the server side too, with my first services running in production."
       },
       {
         "periodo": "2026",
-        "titulo": "AI agents and platforms",
-        "texto": "Agents on the Claude API and MCP orchestrating collection routines, and a multi-tenant white-label portal with i18n and E2E tests."
+        "titulo": "AI at work, for real",
+        "texto": "AI agents stop being experiments and start running real routines in production, while my personal projects pick up speed."
       },
       {
         "periodo": "Final semester",
@@ -383,10 +383,6 @@
         "papel": "Car rebuilds",
         "texto": "Rebuilds wrecked cars learning as he goes, without being a trained mechanic. Hard work beats talent."
       }
-    },
-    "destaque": {
-      "titulo": "Code and combustion",
-      "texto": "Programming and car mechanics are two big passions of mine, and they have a lot in common. Both call for investigation, hypotheses, conclusions and, above all, getting your hands dirty. Whether it is a bug in production or a strange noise in the engine, the path is the same: understand the cause before doing anything."
     }
   },
   "foraDoCodigo": {
@@ -406,17 +402,17 @@
       "simuladores": {
         "tag": "sim racing",
         "titulo": "Simulators",
-        "texto": "Assetto Corsa and BeamNG.drive, plus some Euro Truck Simulator now and then: where my love for cars and technology meet."
+        "texto": "Assetto Corsa and BeamNG.drive, plus some Euro Truck Simulator now and then."
       },
       "impressao": {
         "tag": "3D printing",
         "titulo": "3D printing",
-        "texto": "Model, slice, tweak and print again: a trial-and-error loop that feels a lot like debugging."
+        "texto": "Model, slice, tweak and print again, until the part comes out right."
       },
       "carros": {
         "tag": "garage",
-        "titulo": "Cars",
-        "texto": "I love doing maintenance and mods on my cars myself. My biggest feat so far was replacing a head gasket at home, together with my girlfriend. Cars are a passion I found as a kid and explore a lot now as an \"adult\"."
+        "titulo": "Code and combustion",
+        "texto": "Cars are a passion I found as a kid and explore a lot now as an \"adult\": I do maintenance and mods myself, and my biggest feat so far was replacing the head gasket at home, together with my girlfriend. Mechanics and programming ask for the same thing: investigate, form hypotheses and understand the cause before getting your hands dirty."
       },
       "karate": {
         "tag": "karate",
