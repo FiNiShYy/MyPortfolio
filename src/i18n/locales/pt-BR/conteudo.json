@@ -56,27 +56,27 @@
     "grupos": {
       "front": {
         "titulo": "Front-end",
-        "texto": "Interfaces responsivas, multi-idioma e com identidade visual por cliente."
+        "texto": "Componentes, estado, estilo e tradução."
       },
       "back": {
         "titulo": "Back-end & APIs",
-        "texto": "Serviços que integram plataformas de cobrança a bancos e meios de pagamento, e recursos em tempo real como chamadas e presença ao vivo."
+        "texto": "APIs, autenticação e comunicação em tempo real."
       },
       "ia": {
         "titulo": "IA & Agentes",
-        "texto": "Agentes que executam tarefas reais, com ferramentas próprias expostas via MCP."
+        "texto": "Modelos e o protocolo que dá ferramentas aos agentes."
       },
       "dados": {
         "titulo": "Dados",
-        "texto": "Persistência de documentos, cache e filas."
+        "texto": "Documentos, cache e filas."
       },
       "infra": {
         "titulo": "Infra & Deploy",
-        "texto": "Serviços empacotados em containers e publicados em nuvem e VPS por pipelines de CI/CD."
+        "texto": "Containers, pipelines e servidores."
       },
       "qualidade": {
         "titulo": "Qualidade",
-        "texto": "Testes de jornada ponta a ponta e código padronizado antes de cada deploy."
+        "texto": "Testes ponta a ponta, unitários e código padronizado."
       },
       "design": {
         "titulo": "Design",
@@ -137,7 +137,7 @@
   },
   "projetos": {
     "titulo": "Projetos",
-    "sub": "Sites e portais públicos em que trabalhei — dos primeiros passos aos projetos para clientes.",
+    "sub": "Do primeiro site publicado a sistemas completos: portais para clientes, plataformas e projetos pessoais.",
     "itens": {
       "tino": {
         "tipo": "Plataforma SaaS",
@@ -332,13 +332,13 @@
       },
       {
         "periodo": "2025",
-        "titulo": "Back-end e integrações",
-        "texto": "Node.js e Express em produção: APIs de negociação e integrações com bancos, meios de pagamento e serviços SOAP."
+        "titulo": "Do front ao back-end",
+        "texto": "Passo a cuidar também do lado do servidor, com os primeiros serviços meus rodando em produção."
       },
       {
         "periodo": "2026",
-        "titulo": "Agentes de IA e plataformas",
-        "texto": "Agentes com Claude API e MCP orquestrando rotinas de cobrança, e um portal whitelabel multi-tenant com i18n e testes E2E."
+        "titulo": "IA no trabalho de verdade",
+        "texto": "Agentes de IA deixam de ser experimento e passam a rodar rotinas reais em produção, enquanto os projetos pessoais ganham fôlego."
       },
       {
         "periodo": "Último semestre",
@@ -383,10 +383,6 @@
         "papel": "Reconstrução de carros",
         "texto": "Reconstrói carros destruídos aprendendo no caminho, sem ser mecânico de formação. Trabalho duro vence talento."
       }
-    },
-    "destaque": {
-      "titulo": "Código e combustão",
-      "texto": "Programação e mecânica automotiva são duas grandes paixões minhas, e elas conversam muito entre si. As duas pedem investigação, hipóteses, conclusões e, principalmente, pôr a mão na massa. Seja um bug em produção ou um barulho estranho no motor, o caminho é o mesmo: entender a causa antes de fazer algo."
     }
   },
   "foraDoCodigo": {
@@ -406,17 +402,17 @@
       "simuladores": {
         "tag": "sim racing",
         "titulo": "Simuladores",
-        "texto": "Assetto Corsa e BeamNG.drive, com uma passada no Euro Truck Simulator de vez em quando: onde a paixão por carros e a tecnologia andam juntas."
+        "texto": "Assetto Corsa e BeamNG.drive, com uma passada no Euro Truck Simulator de vez em quando."
       },
       "impressao": {
         "tag": "impressão 3D",
         "titulo": "Impressão 3D",
-        "texto": "Modelar, fatiar, ajustar e imprimir de novo: um ciclo de tentativa e erro que lembra muito depurar código."
+        "texto": "Modelar, fatiar, ajustar e imprimir de novo, até a peça sair do jeito certo."
       },
       "carros": {
         "tag": "garagem",
-        "titulo": "Carros",
-        "texto": "Gosto muito de fazer manutenções e modificações por conta própria nos meus carros. Meu maior feito até agora foi trocar uma junta de cabeçote em casa, junto com a minha namorada. Carro é uma paixão que descobri ainda pequeno e que exploro muito agora, como \"adulto\"."
+        "titulo": "Código e combustão",
+        "texto": "Carro é uma paixão que descobri ainda pequeno e que exploro muito agora, como \"adulto\": faço manutenções e modificações por conta própria, e meu maior feito até agora foi trocar a junta de cabeçote em casa, junto com a minha namorada. Mecânica e programação pedem o mesmo: investigar, levantar hipóteses e entender a causa antes de pôr a mão na massa."
       },
       "karate": {
         "tag": "karatê",

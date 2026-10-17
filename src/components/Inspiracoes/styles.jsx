@@ -117,39 +117,6 @@ export const Papel = styled.span`
   color: var(--${(p) => p.$cor}-forte);
 `;
 
-// Bloco de citação pessoal, no estilo dos callouts da referência visual.
-export const Destaque = styled.blockquote`
-  display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 0 1.1rem;
-  margin-top: clamp(2rem, 4vw, 3rem);
-  padding: clamp(1.5rem, 3vw, 2.25rem);
-  border-radius: var(--radius);
-  background: var(--teal-suave);
-
-  &::before {
-    content: "";
-    width: 0.8rem;
-    height: 0.8rem;
-    margin-top: 0.55rem;
-    border-radius: 50%;
-    background: var(--vivo-teal);
-    box-shadow: 0 0 0 4px color-mix(in oklch, var(--vivo-teal) 25%, transparent);
-  }
-
-  h3 {
-    font-size: clamp(1.4rem, 2.5vw, 1.75rem);
-  }
-
-  p {
-    grid-column: 2;
-    max-width: 52rem;
-    margin-top: 0.6rem;
-    font-size: clamp(1.0625rem, 1.5vw, 1.1875rem);
-    line-height: 1.6;
-  }
-`;
-
 export const Usuario = styled.span`
   margin-top: auto;
   padding-top: 1.25rem;

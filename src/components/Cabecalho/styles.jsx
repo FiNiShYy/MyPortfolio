@@ -90,6 +90,12 @@ export const Acoes = styled.div`
   align-items: center;
   gap: 0.35rem;
   margin-left: auto;
+
+  @media (max-width: 520px) {
+    .curriculo {
+      display: none;
+    }
+  }
 `;
 
 export const BotaoIcone = styled.button`

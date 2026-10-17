@@ -36,12 +36,6 @@ const Inspiracoes = () => {
           );
         })}
       </S.Grade>
-      <Revelar>
-        <S.Destaque>
-          <h3>{t("inspiracoes.destaque.titulo")}</h3>
-          <p>{t("inspiracoes.destaque.texto")}</p>
-        </S.Destaque>
-      </Revelar>
     </Secao>
   );
 };
