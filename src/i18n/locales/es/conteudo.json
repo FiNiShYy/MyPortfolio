@@ -1,0 +1,534 @@
+{
+  "hero": {
+    "tag": "Desarrollador full stack · Salt Systems",
+    "titulo": "Kauã Gabriel",
+    "lead": "Construyo APIs, integraciones financieras y agentes de IA para fintechs de crédito y cobranza — desde el servicio que habla con el banco hasta la pantalla donde el cliente negocia su deuda.",
+    "local": "Maringá, Brasil · en producción desde 2023"
+  },
+  "terminal": {
+    "titulo": "kaua@dev: ~",
+    "linhas": [
+      {
+        "tipo": "cmd",
+        "texto": "whoami"
+      },
+      {
+        "tipo": "saida",
+        "texto": "kaua — dev full stack · Maringá/BR"
+      },
+      {
+        "tipo": "cmd",
+        "texto": "cat stack.txt"
+      },
+      {
+        "tipo": "saida",
+        "texto": "react · typescript · node · express"
+      },
+      {
+        "tipo": "saida",
+        "texto": "mongodb · redis · docker · aws"
+      },
+      {
+        "tipo": "saida",
+        "texto": "claude api · mcp · playwright"
+      },
+      {
+        "tipo": "cmd",
+        "texto": "uptime"
+      },
+      {
+        "tipo": "saida",
+        "texto": "3+ años construyendo para fintechs"
+      },
+      {
+        "tipo": "cmd",
+        "texto": "status"
+      },
+      {
+        "tipo": "ok",
+        "texto": "● en producción (y en Assetto en mis ratos libres)"
+      }
+    ]
+  },
+  "stack": {
+    "titulo": "Mi stack",
+    "sub": "Lo que de verdad uso, en el día a día y en producción — agrupado según el papel que cumple cada herramienta.",
+    "grupos": {
+      "front": {
+        "titulo": "Front-end",
+        "texto": "Componentes, estado, estilos y traducción."
+      },
+      "back": {
+        "titulo": "Back-end y APIs",
+        "texto": "APIs, autenticación y comunicación en tiempo real."
+      },
+      "ia": {
+        "titulo": "IA y agentes",
+        "texto": "Modelos y el protocolo que les da herramientas a los agentes."
+      },
+      "dados": {
+        "titulo": "Datos",
+        "texto": "Documentos, caché y colas."
+      },
+      "infra": {
+        "titulo": "Infra y deploy",
+        "texto": "Contenedores, pipelines y servidores."
+      },
+      "qualidade": {
+        "titulo": "Calidad",
+        "texto": "Pruebas end-to-end, unitarias y código estandarizado."
+      },
+      "design": {
+        "titulo": "Diseño",
+        "texto": "Del prototipo a la interfaz."
+      }
+    }
+  },
+  "construo": {
+    "titulo": "Lo que construyo",
+    "sub": "Buena parte de mi trabajo no tiene pantalla: son APIs y servicios que corren tras bambalinas en fintechs. Estos son los tipos de sistemas que entrego.",
+    "itens": {
+      "integracoes": {
+        "tag": "integraciones",
+        "titulo": "Integraciones con bancos y fintechs",
+        "texto": "Servicios que conectan plataformas de cobranza con instituciones financieras: consulta de deudas, simulación de acuerdos de pago, emisión de boletos y Pix.",
+        "pontos": [
+          "APIs REST y servicios SOAP heredados",
+          "Autenticación con JWT y OTP multicanal",
+          "Caché y colas con Redis"
+        ],
+        "comentario": "// simulación de acuerdo — datos ficticios"
+      },
+      "agentes": {
+        "tag": "ia",
+        "titulo": "Agentes de IA en producción",
+        "texto": "Agentes construidos con la Claude API que orquestan rutinas de cobranza, atención y gestión, usando herramientas propias expuestas vía MCP.",
+        "pontos": [
+          "Servidores MCP con herramientas validadas",
+          "Orquestación entre agentes y servicios",
+          "Contexto y memoria persistidos en MongoDB"
+        ],
+        "comentario": "// herramienta MCP expuesta al agente"
+      },
+      "portais": {
+        "tag": "portales",
+        "titulo": "Portales de autonegociación white label",
+        "texto": "Un único front-end que atiende a varias marcas: tema, contenido e idioma se resuelven en tiempo de ejecución a partir del dominio visitado.",
+        "pontos": [
+          "Multi-tenant con tema por cliente",
+          "i18n y renderizado en el servidor",
+          "PWA con notificaciones push"
+        ],
+        "comentario": "// el dominio decide marca, tema e idioma"
+      },
+      "servicos": {
+        "tag": "infra",
+        "titulo": "Servicios, deploy y calidad",
+        "texto": "Microservicios en Node.js empaquetados en Docker, con pruebas de recorrido end-to-end que corren antes de cada publicación.",
+        "pontos": [
+          "Docker + deploy en VPS y AWS",
+          "Pipelines de CI/CD con Jenkins",
+          "Playwright E2E y pruebas unitarias",
+          "ESLint y Prettier como estándar"
+        ],
+        "comentario": "# levanta el servicio y corre el recorrido E2E"
+      }
+    }
+  },
+  "projetos": {
+    "titulo": "Proyectos",
+    "sub": "Desde el primer sitio que publiqué hasta sistemas completos: portales para clientes, plataformas y proyectos personales.",
+    "itens": {
+      "tino": {
+        "tipo": "Plataforma SaaS",
+        "titulo": "Tino",
+        "resumo": "Plataforma de gestión del trabajo y comunicación de equipos con asistente de IA. Lideré la migración de todo el panel a React, incluidas las llamadas, la presencia en vivo y la oficina virtual.",
+        "detalhes": [
+          "Migración del panel heredado (HTML/JS) a React + Vite por etapas, hasta el corte final del sistema anterior",
+          "Llamadas con LiveKit: escenario, pantalla compartida, PiP y radio; voz por WebSocket y presencia por SSE",
+          "Oficina virtual en canvas, con proximidad y mascotas",
+          "Páginas públicas con renderizado en el servidor (SSR) y SEO",
+          "Estado con Zustand y TanStack Query; pruebas con Vitest y Testing Library"
+        ]
+      },
+      "caprioli": {
+        "tipo": "E-commerce",
+        "titulo": "Caprioli Relógios",
+        "resumo": "Tienda en línea de relojes hecha en Shopify. Proyecto paralelo, todavía en curso.",
+        "detalhes": [
+          "Tienda montada y personalizada en Shopify",
+          "Vitrina por estilo: día a día, deporte, buceo y formal",
+          "Pago en hasta 12 cuotas y atención por WhatsApp"
+        ],
+        "telas": [
+          "Inicio: elige por estilo",
+          "Vitrina de productos",
+          "Catálogo con filtros",
+          "Página del producto"
+        ]
+      },
+      "fci": {
+        "tipo": "Sitio institucional",
+        "titulo": "FCI Viagens",
+        "resumo": "Sitio de una agencia de viajes con itinerarios, viajes corporativos y atención directa por WhatsApp.",
+        "detalhes": [
+          "Hero con llamado a la atención al cliente",
+          "Secciones de itinerarios, viajes corporativos y gestión",
+          "Botón flotante de atención prioritaria"
+        ]
+      },
+      "ceacc": {
+        "tipo": "Portal",
+        "titulo": "CEACC",
+        "resumo": "Portal de una confederación de tiro deportivo, con reglamentos, calendario de competencias, galería y documentación.",
+        "detalhes": [
+          "Construido con Astro",
+          "Tema claro y oscuro",
+          "Páginas de reglamentos, calendario y galería"
+        ]
+      },
+      "fazcredito": {
+        "tipo": "Sitio institucional",
+        "titulo": "Faz Crédito",
+        "resumo": "Sitio de soluciones financieras — del refinanciamiento a las inversiones — con cotizaciones de monedas en tiempo real en la parte superior.",
+        "detalhes": [
+          "Franja de cotizaciones de cambio en vivo",
+          "Vitrina de servicios y productos",
+          "Área de acceso para clientes"
+        ]
+      },
+      "salt": {
+        "tipo": "Portal corporativo",
+        "titulo": "Portal Salt Systems",
+        "resumo": "Renovación del portal de la empresa, para llamar más la atención y comunicar mejor las soluciones que ofrece.",
+        "detalhes": [
+          "Rediseño completo de la identidad digital",
+          "Enfoque en la claridad de las soluciones",
+          "Versión actual en producción"
+        ]
+      },
+      "saltHtml": {
+        "tipo": "Portal corporativo",
+        "titulo": "Portal Salt Systems (v1)",
+        "resumo": "Primera versión del portal de la empresa, hecha con HTML, CSS y JavaScript puros.",
+        "detalhes": [
+          "HTML, CSS y JavaScript sin framework",
+          "Diseño responsivo",
+          "Base para la versión actual"
+        ]
+      },
+      "eletro": {
+        "tipo": "Landing page",
+        "titulo": "Eletro São José",
+        "resumo": "Mi primer proyecto publicado: la landing page de un taller de reparación de herramientas eléctricas.",
+        "detalhes": [
+          "HTML, CSS y JavaScript",
+          "Carrusel de marcas atendidas",
+          "Publicado en GitHub Pages"
+        ]
+      },
+      "organo": {
+        "tipo": "Estudio",
+        "titulo": "Organo",
+        "resumo": "Organizador de equipos en React, desarrollado durante la formación de React de Alura.",
+        "detalhes": [
+          "Componentes y props",
+          "Estado con hooks",
+          "Formularios controlados"
+        ]
+      },
+      "centavo": {
+        "tipo": "App financiera",
+        "titulo": "Centavo",
+        "resumo": "App de control financiero multiusuario en Next.js y MongoDB, con acceso solo por invitación o aprobación y 2FA. Reúne importación de estados de cuenta OFX, gráficos y cuatro temas con estética de app bancaria.",
+        "detalhes": [
+          "Inicio de sesión con 2FA obligatorio, sesiones versionadas (cambiar la contraseña cierra las sesiones anteriores) y rate limit por usuario y por IP",
+          "Importación de estados de cuenta OFX con detección del banco, sugerencia de categoría y de pago, y deduplicación por FITID",
+          "Cuatro temas dark-first, ahorro separado del saldo disponible y edición de movimientos en lote"
+        ],
+        "telas": [
+          "Resumen: KPIs y gráficos",
+          "Tema Kuromi",
+          "Edición de movimientos en lote",
+          "Importación de estado de cuenta OFX",
+          "Nuevo movimiento",
+          "Admin: aprobación de cuentas"
+        ]
+      },
+      "ana": {
+        "tipo": "Plataforma de estudio",
+        "titulo": "Resumos da Ana",
+        "resumo": "Plataforma para publicar resúmenes de estudio: quien administra arrastra un .html (o genera uno a partir de un PDF con IA) y se convierte en una página con enlace. Los compañeros entran por invitación y solo leen lo que se les habilitó.",
+        "detalhes": [
+          "Páginas publicadas aisladas por CSP (connect-src 'none'): el JS del HTML subido no alcanza la API del panel",
+          "RLS en todas las tablas sin policies; todo acceso pasa por route handlers en el servidor, con la sesión en una cookie httpOnly",
+          "Acceso por materia o por página, 2FA para admins y versionado al reemplazar archivos"
+        ],
+        "telas": [
+          "Panel de resúmenes",
+          "Resumen publicado con flashcards",
+          "Subida arrastrando archivos",
+          "Invitaciones y cuentas",
+          "Generar resumen con IA a partir de un PDF",
+          "Quién ve cada página"
+        ]
+      },
+      "bolao": {
+        "tipo": "App web",
+        "titulo": "Bolão Copa 2026",
+        "resumo": "Quiniela del Mundial 2026 entre amigos, con pronósticos por partido, ranking en tiempo real y seguimiento en vivo de los partidos.",
+        "detalhes": [
+          "Puntuación por fase y pronóstico de campeón; cada pronóstico se firma con HMAC contra alteraciones",
+          "Resultados sincronizados con football-data.org y marcador en vivo con goles, tarjetas y proyección \"si terminara ahora\"",
+          "Notificaciones push de gol (Web Push), cuadro interactivo, comparación entre participantes y admin con exportación a Excel"
+        ],
+        "telas": [
+          "Ranking con podio",
+          "Partido en vivo",
+          "Panel del participante",
+          "Cuadro de eliminatorias",
+          "Panel de admin",
+          "Comparar participantes"
+        ]
+      },
+      "vito": {
+        "tipo": "Sistema de salud",
+        "titulo": "Vito",
+        "resumo": "Sistema de salud familiar que organiza personas, hogares y condiciones clínicas en un genograma interactivo con el estándar McGoldrick. Muestra de un vistazo el historial de salud y las relaciones de toda una familia.",
+        "detalhes": [
+          "Genograma clínico McGoldrick dibujado desde cero: diseño por generaciones, uniones, relaciones emocionales con trazo propio (zigzag, línea doble, ruptura, flecha de abuso) y minimapa con zoom",
+          "Alertas de salud familiar calculadas por parentesco: las condiciones de padres, hijos y hermanos aparecen en la ficha de cada persona",
+          "Registro por etapas con validación Zod (incluido el CPF), API Express protegida por token de Supabase Auth y RLS en Postgres"
+        ],
+        "telas": [
+          "Genograma de la familia",
+          "Ficha con alertas de salud familiar",
+          "Relaciones de parentesco y emocionales",
+          "Búsqueda de personas",
+          "Registro por etapas",
+          "Inicio de sesión"
+        ]
+      }
+    }
+  },
+  "jornada": {
+    "titulo": "Trayectoria",
+    "sub": "Un camino corto, pero intenso: casi todo lo que sé lo aprendí resolviendo problemas reales en producción.",
+    "itens": [
+      {
+        "periodo": "2023",
+        "titulo": "Primeras líneas de código",
+        "texto": "Java con JFrame, Git y GitHub, el curso de JavaScript de Curso em Vídeo y mi primer sitio publicado."
+      },
+      {
+        "periodo": "Sep 2023",
+        "titulo": "Desarrollador en Salt Systems",
+        "texto": "Entro a Salt para desarrollar herramientas de cobranza para fintechs. Primer gran proyecto: el nuevo portal de la empresa."
+      },
+      {
+        "periodo": "2024",
+        "titulo": "React y Astro",
+        "texto": "Formación de React en Alura, mi primer portafolio y portales en Astro para clientes de distintos sectores."
+      },
+      {
+        "periodo": "2025",
+        "titulo": "Del front al back-end",
+        "texto": "Empiezo a encargarme también del lado del servidor, con mis primeros servicios corriendo en producción."
+      },
+      {
+        "periodo": "2026",
+        "titulo": "IA en el trabajo de verdad",
+        "texto": "Los agentes de IA dejan de ser un experimento y pasan a ejecutar rutinas reales en producción, mientras los proyectos personales toman impulso."
+      },
+      {
+        "periodo": "Último semestre",
+        "titulo": "Ingeniería de Software · UniCesumar",
+        "texto": "Recta final de la carrera de Ingeniería de Software, en paralelo al trabajo."
+      }
+    ]
+  },
+  "inspiracoes": {
+    "titulo": "Quién me inspira",
+    "sub": "Personas de áreas muy distintas, con algo en común: veo su trabajo y entiendo adónde quiero llegar algún día.",
+    "itens": {
+      "ana": {
+        "papel": "Mi mamá · Policía Militar, Educación Física y Derecho",
+        "texto": "Me empuja hasta mis límites y me ayuda a ir más allá de ellos. Sin duda no sería quien soy sin ella."
+      },
+      "kerber": {
+        "papel": "Fundador de Salt Systems",
+        "texto": "Fundó la empresa donde crecí como dev y muestra, en la práctica, cómo convertir la tecnología en negocio."
+      },
+      "akita": {
+        "papel": "Dev y creador de AkitaOnRails",
+        "texto": "Décadas de carrera, opiniones sin filtro y mucho estudio en público. La referencia visual de este sitio vino de él."
+      },
+      "igor": {
+        "papel": "Cofundador de Flow Podcast",
+        "texto": "Empezó con un canal de videojuegos y construyó uno de los podcasts más grandes de Brasil."
+      },
+      "rato": {
+        "papel": "Rato Borrachudo",
+        "texto": "Años creando contenido sobre videojuegos, electrónica y robótica a su manera, sin perder la autenticidad."
+      },
+      "acf": {
+        "papel": "ACF Performance",
+        "texto": "Convirtió la rutina de un taller en uno de los canales automotrices más grandes del país, con constancia video tras video."
+      },
+      "cev": {
+        "papel": "Curso em Vídeo",
+        "texto": "Ahí escribí mis primeras líneas de JavaScript. Enseñanza de calidad, gratis, para quien quiera empezar."
+      },
+      "mat": {
+        "papel": "Reconstrucción de autos",
+        "texto": "Reconstruye autos destrozados aprendiendo en el camino, sin ser mecánico de formación. El trabajo duro le gana al talento."
+      }
+    }
+  },
+  "foraDoCodigo": {
+    "titulo": "Fuera del código",
+    "sub": "Un poco de quién soy cuando se cierra la terminal.",
+    "itens": {
+      "setup": {
+        "tag": "setup",
+        "titulo": "Windows en casa, Linux en el trabajo",
+        "texto": "Mi sistema favorito es Windows, pero en el trabajo el día transcurre en Linux: servidores, contenedores y terminal."
+      },
+      "jogos": {
+        "tag": "steam",
+        "titulo": "Videojuegos",
+        "texto": "Me gustan los shooters competitivos como Counter-Strike, las peleas con amigos en Brawlhalla, el sigilo de Hitman y Splinter Cell, los cooperativos como PEAK y el clásico sandbox Garry's Mod, que me acompaña desde hace años."
+      },
+      "simuladores": {
+        "tag": "sim racing",
+        "titulo": "Simuladores",
+        "texto": "Assetto Corsa y BeamNG.drive, con una pasada por Euro Truck Simulator de vez en cuando."
+      },
+      "impressao": {
+        "tag": "impresión 3D",
+        "titulo": "Impresión 3D",
+        "texto": "Modelar, laminar, ajustar e imprimir otra vez, hasta que la pieza salga como debe."
+      },
+      "carros": {
+        "tag": "garaje",
+        "titulo": "Código y combustión",
+        "texto": "Los autos son una pasión que descubrí de niño y que ahora exploro mucho, ya como \"adulto\": hago mantenimientos y modificaciones por mi cuenta, y mi mayor logro hasta ahora fue cambiar la junta de culata en casa, junto con mi novia. La mecánica y la programación piden lo mismo: investigar, plantear hipótesis y entender la causa antes de meter mano."
+      },
+      "karate": {
+        "tag": "karate",
+        "titulo": "Karate",
+        "texto": "Empecé por insistencia de mi mamá, que quería que probara deportes variados. Confieso que las primeras clases no me gustaban, pero a medida que fui mejorando, el interés creció hasta volverse parte de quién soy."
+      }
+    },
+    "ilustracao": {
+      "alt": "Ilustración de Kauã frente a la computadora, rodeado de ventanas de código y un aviso de error, con un gato gris junto al escritorio",
+      "legenda": "Autorretrato: yo, gato y errores."
+    }
+  },
+  "blog": {
+    "titulo": "Blog",
+    "sub": "Opiniones, aprendizajes e ideas sueltas sobre tecnología, IA, carrera y lo que vaya surgiendo en el camino.",
+    "estado": "próximamente",
+    "destaqueTitulo": "Tomando forma",
+    "destaqueTexto": "Los primeros textos todavía están en el horno. Muy pronto, opiniones sin filtro, aquí mismo.",
+    "terminal": [
+      {
+        "tipo": "cmd",
+        "texto": "ls posts/"
+      },
+      {
+        "tipo": "saida",
+        "texto": "total 0"
+      },
+      {
+        "tipo": "cmd",
+        "texto": "git status"
+      },
+      {
+        "tipo": "ok",
+        "texto": "● borradores en progreso"
+      }
+    ],
+    "rascunho": "borrador"
+  },
+  "contato": {
+    "titulo": "Hablemos",
+    "sub": "Ya sea para hablar de código, de autos o solo para saludar, elige el canal que prefieras.",
+    "canais": {
+      "linkedin": "El lado más profesional: experiencia y lo que estoy estudiando.",
+      "github": "Proyectos personales, estudios y el código de este portafolio.",
+      "whatsapp": "La forma más rápida de hablar conmigo.",
+      "email": "Para conversaciones más largas, o solo para saludar."
+    },
+    "whatsappMensagem": "¡Hola! Vi tu portafolio y me gustaría conversar contigo."
+  },
+  "bastidores": {
+    "titulo": "Detrás de escena",
+    "sub": "Curiosidades sobre cómo se hizo este sitio, los números del repositorio y hacia dónde va.",
+    "numerosTitulo": "En números",
+    "numerosNota": "Calculados automáticamente en el último build.",
+    "numeros": {
+      "linhas": "líneas de código",
+      "componentes": "componentes",
+      "chaves": "textos traducidos",
+      "tecnologias": "tecnologías en el stack",
+      "projetos": "proyectos",
+      "dependencias": "dependencias"
+    },
+    "hojeTag": "hoy",
+    "hojeTitulo": "100% hardcoded",
+    "hojeTexto": "Por ahora no hay backend ni base de datos detrás de este sitio. Cada texto, proyecto y tecnología vive en archivos JSON y JS dentro del repositorio, y cada cambio es un commit que Vercel publica por su cuenta.",
+    "curiosidadesTitulo": "Curiosidades",
+    "curiosidades": {
+      "hardcoded": {
+        "titulo": "Sin base de datos, solo archivos",
+        "texto": "Todo el contenido está en src/i18n y src/dados. Simple, versionado y rápido, pero cada actualización exige un deploy."
+      },
+      "ia": {
+        "titulo": "Una manita de la IA",
+        "texto": "Claude ayudó en partes del camino, agilizando tareas repetitivas y sirviendo de compañero para intercambiar ideas. Las decisiones y el esmero son míos."
+      },
+      "padrao": {
+        "titulo": "El mismo estándar del día a día",
+        "texto": "Sigue la misma estandarización que uso en mi día a día: tokens CSS por función, styled-components y un styles.jsx junto a cada componente."
+      },
+      "gato": {
+        "titulo": "El gatito sobrevivió",
+        "texto": "La ilustración de \"Fuera del código\" vino del portafolio de 2024. Se borró en la limpieza y la rescaté del historial de git."
+      },
+      "curriculo": {
+        "titulo": "Currículum generado por código",
+        "texto": "Los PDF en portugués e inglés, el favicon y la imagen para compartir se generan con scripts que renderizan HTML en el navegador."
+      },
+      "crawlers": {
+        "titulo": "Hecho para que la IA lo encuentre",
+        "texto": "Tiene llms.txt, datos estructurados JSON-LD y un robots.txt que les da la bienvenida a los crawlers de IA por su nombre."
+      },
+      "cores": {
+        "titulo": "Colores en OKLCH",
+        "texto": "Toda la paleta está definida en OKLCH, con un contraste de texto superior a 7:1 en ambos temas."
+      },
+      "historia": {
+        "titulo": "De CRA a Vite",
+        "texto": "La primera versión, de enero de 2024, usaba Create React App y CSS puro. Esta es la reescritura completa, de octubre de 2026."
+      }
+    },
+    "roadmapTitulo": "Próximos pasos",
+    "roadmapSub": "Del hardcoded a la base de datos: lo que ya existe y lo que viene.",
+    "estados": {
+      "feito": "hecho",
+      "agora": "en progreso",
+      "planejado": "planeado"
+    },
+    "roadmap": {
+      "redesign": "Rediseño con React 19, Vite y styled-components",
+      "hardcoded": "Contenido 100% hardcoded en JSON y JS, versionado en git",
+      "acessibilidade": "Panel de accesibilidad: texto, contraste, dislexia, voz, lengua de señas y filtros de color",
+      "posts": "Primeros posts del blog, escritos en Markdown",
+      "banco": "Base de datos para posts y contenido, con API propia",
+      "painel": "Panel para publicar y editar sin necesidad de un commit",
+      "interacao": "Visitas, reacciones y comentarios en los posts",
+      "dominio": "Dominio propio: cabeludo.dev"
+    }
+  }
+}

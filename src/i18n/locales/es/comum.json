@@ -1,0 +1,75 @@
+{
+  "nav": {
+    "stack": "Stack",
+    "construo": "Lo que construyo",
+    "projetos": "Proyectos",
+    "jornada": "Trayectoria",
+    "blog": "Blog",
+    "contato": "Contacto",
+    "abrirMenu": "Abrir menú",
+    "fecharMenu": "Cerrar menú",
+    "bastidores": "Detrás de escena"
+  },
+  "acoes": {
+    "curriculo": "Currículum",
+    "baixarCurriculo": "Descargar currículum",
+    "verStack": "Ver lo que hago",
+    "verDetalhes": "Ver detalles",
+    "visitar": "Visitar sitio",
+    "fechar": "Cerrar",
+    "copiar": "Copiar",
+    "copiado": "¡Copiado!",
+    "arquivado": "Sitio fuera de línea · archivado",
+    "foraDoCodigo": "Fuera del código",
+    "anterior": "Imagen anterior",
+    "proxima": "Imagen siguiente",
+    "privado": "Proyecto privado · acceso con inicio de sesión"
+  },
+  "tema": {
+    "claro": "Activar tema claro",
+    "escuro": "Activar tema oscuro"
+  },
+  "idioma": {
+    "trocar": "Cambiar idioma"
+  },
+  "rodape": {
+    "feito": "Hecho con React, styled-components y la ayuda de",
+    "direitos": "© {{ano}} Kauã Gabriel",
+    "atualizado": "Última actualización el {{data}}",
+    "saudade": "Extraño los buenos viejos tiempos de escribir cada línea a mano.",
+    "curriculo": "Currículum (PDF)"
+  },
+  "curriculoArquivo": "/resume-kaua-gabriel.pdf",
+  "acessibilidade": {
+    "abrir": "Opciones de accesibilidad",
+    "titulo": "Accesibilidad",
+    "texto": "Tamaño del texto",
+    "diminuir": "Reducir texto",
+    "aumentar": "Aumentar texto",
+    "ferramentas": "Herramientas",
+    "opcoes": {
+      "contraste": "Alto contraste",
+      "dislexia": "Fuente para dislexia",
+      "espacamento": "Espaciado de texto",
+      "links": "Resaltar enlaces",
+      "semAnimacao": "Pausar animaciones",
+      "guia": "Guía de lectura",
+      "cursor": "Cursor grande",
+      "voz": "Lectura en voz alta",
+      "vlibras": "Lengua de señas (VLibras)"
+    },
+    "dicaVoz": "Haz clic en cualquier texto de la página para escucharlo.",
+    "pararLeitura": "Detener lectura",
+    "filtros": "Filtros de color",
+    "filtrosNomes": {
+      "nenhum": "Ninguno",
+      "cinza": "Escala de grises",
+      "protanopia": "Protanopia",
+      "deuteranopia": "Deuteranopia",
+      "tritanopia": "Tritanopia"
+    },
+    "restaurar": "Restaurar valores predeterminados",
+    "pular": "Saltar al contenido"
+  },
+  "tituloPadrao": "Kauã Gabriel · Desarrollador full stack"
+}

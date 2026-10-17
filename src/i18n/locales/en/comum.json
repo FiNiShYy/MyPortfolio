@@ -30,8 +30,7 @@
     "escuro": "Switch to dark theme"
   },
   "idioma": {
-    "trocar": "Mudar para português",
-    "sigla": "PT"
+    "trocar": "Change language"
   },
   "rodape": {
     "feito": "Built with React, styled-components and help from",
@@ -71,5 +70,6 @@
     },
     "restaurar": "Reset to default",
     "pular": "Skip to content"
-  }
+  },
+  "tituloPadrao": "Kauã Gabriel · Full stack developer"
 }

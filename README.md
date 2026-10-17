@@ -1,7 +1,7 @@
 # Kauã Gabriel · Portfolio
 
 Portfolio pessoal: stack, tipos de sistema que construo, projetos, jornada e contato.
-PT/EN, tema claro/escuro e animações sutis ao rolar.
+PT/EN/ES, tema claro/escuro e animações sutis ao rolar.
 
 ## Stack
 

@@ -4,7 +4,7 @@ import { FaGithub } from "react-icons/fa6";
 import { LuMenu, LuMoon, LuSun, LuX } from "react-icons/lu";
 import { NavLink, useLocation, useNavigate } from "react-router-dom";
 
-import { trocarIdioma } from "../../i18n";
+import { IDIOMAS, trocarIdioma } from "../../i18n";
 import { useTema } from "../../hooks/useTema";
 import { rolarPara } from "../../utils/rolarPara";
 import { Botao } from "../ui";
@@ -34,7 +34,6 @@ const Cabecalho = () => {
 
   useEffect(() => setMenuAberto(false), [pathname]);
 
-  const emPortugues = i18n.language === "pt-BR";
   const fecharMenu = () => setMenuAberto(false);
 
   // Na home só rola; fora dela volta para a home e a Inicio rola até a seção.
@@ -81,14 +80,18 @@ const Cabecalho = () => {
           >
             <FaGithub />
           </S.BotaoIcone>
-          <S.BotaoIcone
-            type="button"
-            onClick={() => trocarIdioma(emPortugues ? "en" : "pt-BR")}
+          <S.SeletorIdioma
+            value={i18n.language}
+            onChange={(e) => trocarIdioma(e.target.value)}
             aria-label={t("idioma.trocar")}
             title={t("idioma.trocar")}
           >
-            {t("idioma.sigla")}
-          </S.BotaoIcone>
+            {Object.entries(IDIOMAS).map(([idioma, sigla]) => (
+              <option key={idioma} value={idioma}>
+                {sigla}
+              </option>
+            ))}
+          </S.SeletorIdioma>
           <S.BotaoIcone
             type="button"
             onClick={alternar}

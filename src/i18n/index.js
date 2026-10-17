@@ -5,26 +5,33 @@ import comumPt from "./locales/pt-BR/comum.json";
 import conteudoPt from "./locales/pt-BR/conteudo.json";
 import comumEn from "./locales/en/comum.json";
 import conteudoEn from "./locales/en/conteudo.json";
+import comumEs from "./locales/es/comum.json";
+import conteudoEs from "./locales/es/conteudo.json";
 
-export const IDIOMAS = ["pt-BR", "en"];
+// Idioma > sigla mostrada no seletor do cabeçalho.
+export const IDIOMAS = { "pt-BR": "PT", en: "EN", es: "ES" };
 const CHAVE = "idioma";
 
-// Preferência salva > idioma do navegador > pt-BR. São só dois idiomas e o
-// conteúdo é pequeno, então os dois vão no bundle (sem import dinâmico).
+// Preferência salva > idioma do navegador > inglês. O conteúdo é pequeno, então
+// todos os idiomas vão no bundle (sem import dinâmico).
 function detectarIdioma() {
   try {
     const salvo = localStorage.getItem(CHAVE);
-    if (IDIOMAS.includes(salvo)) return salvo;
+    if (salvo in IDIOMAS) return salvo;
   } catch {
     // localStorage bloqueado (aba anônima etc.): segue para o navegador.
   }
-  return navigator.language?.toLowerCase().startsWith("pt") ? "pt-BR" : "en";
+  const navegador = navigator.language?.toLowerCase() ?? "";
+  if (navegador.startsWith("pt")) return "pt-BR";
+  if (navegador.startsWith("es")) return "es";
+  return "en";
 }
 
 i18n.use(initReactI18next).init({
   resources: {
     "pt-BR": { comum: comumPt, conteudo: conteudoPt },
     en: { comum: comumEn, conteudo: conteudoEn },
+    es: { comum: comumEs, conteudo: conteudoEs },
   },
   lng: detectarIdioma(),
   fallbackLng: "pt-BR",

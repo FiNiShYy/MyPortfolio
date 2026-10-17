@@ -77,7 +77,11 @@ export const GRUPOS_STACK = [
     itens: [
       { nome: "Claude API", Icone: SiClaude },
       { nome: "MCP", Icone: SiModelcontextprotocol },
-      { nome: "Agentes / orquestração", nomeEn: "Agents / orchestration", Icone: LuWorkflow },
+      {
+        nome: "Agentes / orquestração",
+        traducoes: { en: "Agents / orchestration", es: "Agentes / orquestación" },
+        Icone: LuWorkflow,
+      },
     ],
   },
   {
@@ -107,7 +111,11 @@ export const GRUPOS_STACK = [
       { nome: "Playwright", Icone: LuTestTube },
       { nome: "Vitest", Icone: SiVitest },
       { nome: "Testing Library", Icone: SiTestinglibrary },
-      { nome: "Testes unitários", nomeEn: "Unit tests", Icone: LuFlaskConical },
+      {
+        nome: "Testes unitários",
+        traducoes: { en: "Unit tests", es: "Pruebas unitarias" },
+        Icone: LuFlaskConical,
+      },
       { nome: "ESLint", Icone: SiEslint },
       { nome: "Prettier", Icone: SiPrettier },
     ],
