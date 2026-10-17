@@ -1,10 +1,10 @@
 import styled, { css } from "styled-components";
 
-// Ilustração à esquerda, cards 2×2 à direita; empilha no tablet.
+// Ilustração + 2 cards em 3 colunas iguais; empilha no tablet.
 export const Layout = styled.div`
   display: grid;
-  grid-template-columns: minmax(18rem, 0.85fr) 2fr;
-  align-items: start;
+  grid-template-columns: 1fr 2fr;
+  align-items: stretch;
   gap: 1.25rem;
 
   @media (max-width: 1020px) {
@@ -34,14 +34,9 @@ export const Ilustracao = styled.figure`
     color: var(--texto-suave);
   }
 
-  /* No desktop acompanha a rolagem ao lado dos cards, que são mais altos. */
-  @media (min-width: 1021px) {
-    position: sticky;
-    top: 6rem;
-  }
-
   @media (max-width: 1020px) {
     max-width: 26rem;
+    justify-self: center;
   }
 `;
 
@@ -53,6 +48,12 @@ export const Grade = styled.div`
   > div {
     height: 100%;
   }
+
+  ${(p) =>
+    p.$abaixo &&
+    css`
+      margin-top: 1.25rem;
+    `}
 
   @media (max-width: 640px) {
     grid-template-columns: 1fr;

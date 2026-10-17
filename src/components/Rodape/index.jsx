@@ -131,6 +131,9 @@ const dataBuild = new Date(
     : Date.now(),
 );
 
+// __VERSAO__ vem do package.json via Vite; some do rodapé se o define faltar.
+const versao = typeof __VERSAO__ === "string" ? `v${__VERSAO__} · ` : "";
+
 const Rodape = () => {
   const { t, i18n } = useTranslation();
   const data = new Intl.DateTimeFormat(i18n.language, {
@@ -156,7 +159,10 @@ const Rodape = () => {
         </Segredo>
         .
       </Feito>
-      <Atualizacao>{t("rodape.atualizado", { data })}</Atualizacao>
+      <Atualizacao>
+        {versao}
+        {t("rodape.atualizado", { data })}
+      </Atualizacao>
     </Container>
   );
 };

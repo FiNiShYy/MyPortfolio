@@ -352,7 +352,7 @@
     "sub": "Pessoas de áreas bem diferentes, com algo em comum: vejo o trabalho delas e entendo onde, um dia, quero chegar.",
     "itens": {
       "ana": {
-        "papel": "Minha mãe · Educação Física e Direito",
+        "papel": "Minha mãe · Policial Militar, Educação Física e Direito",
         "texto": "Me empurra até os meus limites e me ajuda a ir além deles. Com certeza eu não seria quem sou sem ela."
       },
       "kerber": {
@@ -412,11 +412,21 @@
         "tag": "impressão 3D",
         "titulo": "Impressão 3D",
         "texto": "Modelar, fatiar, ajustar e imprimir de novo: um ciclo de tentativa e erro que lembra muito depurar código."
+      },
+      "carros": {
+        "tag": "garagem",
+        "titulo": "Carros",
+        "texto": "Gosto muito de fazer manutenções e modificações por conta própria nos meus carros. Meu maior feito até agora foi trocar uma junta de cabeçote em casa, junto com a minha namorada. Carro é uma paixão que descobri ainda pequeno e que exploro muito agora, como \"adulto\"."
+      },
+      "karate": {
+        "tag": "karatê",
+        "titulo": "Karatê",
+        "texto": "Comecei por insistência da minha mãe, que queria que eu experimentasse esportes variados. Confesso que nas primeiras aulas não gostava, mas conforme fui me desenvolvendo, o interesse cresceu até virar parte de quem eu sou."
       }
     },
     "ilustracao": {
       "alt": "Ilustração do Kauã no computador, cercado de janelas de código e um aviso de erro, com um gato cinza ao lado da mesa",
-      "legenda": "Autorretrato: eu, um erro na tela e o gato de supervisor."
+      "legenda": "Autorretrato: eu, gato e erros."
     }
   },
   "blog": {
