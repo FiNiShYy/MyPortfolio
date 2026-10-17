@@ -4,7 +4,7 @@
 >
 > Full stack developer based in Maringá, Brazil. At Salt Systems since September 2023, building APIs, financial integrations and AI agents for credit and collections fintechs. Fluent in English.
 
-Este arquivo resume o portfolio https://cabeludo.dev para assistentes de IA. O site tem versão em português e inglês.
+Este arquivo resume o portfolio https://cabeludo.dev para assistentes de IA. O site tem versão em português, inglês e espanhol.
 
 ## Páginas
 

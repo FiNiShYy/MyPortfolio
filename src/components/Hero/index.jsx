@@ -12,6 +12,7 @@ const Hero = () => {
   return (
     <S.Container id="topo">
       <S.Brilho aria-hidden="true" />
+      <S.Grade aria-hidden="true" />
       <Revelar>
         <S.Texto>
           <Tag $cor="verde">{t("hero.tag")}</Tag>

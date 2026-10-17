@@ -10,8 +10,10 @@ export const Container = styled.section`
   grid-template-columns: 1.15fr 1fr;
   align-items: center;
   gap: clamp(2.5rem, 6vw, 5rem);
-  min-height: calc(100svh - 4.25rem);
-  padding: clamp(3rem, 8vw, 6rem) var(--cap);
+  /* Sobe por trás do cabeçalho (4.25rem) para o fundo começar no topo da página. */
+  margin-top: -4.25rem;
+  min-height: 100svh;
+  padding: calc(4.25rem + clamp(3rem, 8vw, 6rem)) var(--cap) clamp(3rem, 8vw, 6rem);
   overflow: hidden;
 
   @media (max-width: 960px) {
@@ -26,9 +28,30 @@ export const Brilho = styled.div`
   inset: 0;
   z-index: -1;
   pointer-events: none;
+  mask-image: linear-gradient(#000 55%, transparent);
   background:
     radial-gradient(40rem 28rem at 85% 30%, color-mix(in oklch, var(--vivo-violeta) 18%, transparent), transparent 70%),
     radial-gradient(30rem 22rem at 70% 85%, color-mix(in oklch, var(--vivo-verde) 16%, transparent), transparent 70%);
+`;
+
+const linha = (pct) => `color-mix(in oklch, var(--vivo-azul) ${pct}%, transparent)`;
+
+// Grade de planta atrás do hero (e do cabeçalho transparente): linhas finas a cada
+// 1rem e mais fortes a cada 5rem. Some nas bordas e, embaixo, antes do fim da seção.
+export const Grade = styled.div`
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    linear-gradient(${linha(26)} 1px, transparent 1px) 0 0 / 5rem 5rem,
+    linear-gradient(90deg, ${linha(26)} 1px, transparent 1px) 0 0 / 5rem 5rem,
+    linear-gradient(${linha(12)} 1px, transparent 1px) 0 0 / 1rem 1rem,
+    linear-gradient(90deg, ${linha(12)} 1px, transparent 1px) 0 0 / 1rem 1rem;
+  mask-image:
+    radial-gradient(ellipse 75% 85% at 70% 40%, #000 30%, transparent 78%),
+    linear-gradient(#000 45%, transparent 90%);
+  mask-composite: intersect;
 `;
 
 export const Texto = styled.div`

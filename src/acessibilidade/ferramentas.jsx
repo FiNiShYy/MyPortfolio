@@ -106,7 +106,7 @@ export function LeitorVoz() {
       window.speechSynthesis.cancel();
       atual.current?.classList.remove("a11y-lendo");
       const fala = new SpeechSynthesisUtterance(texto);
-      fala.lang = i18n.language === "en" ? "en-US" : "pt-BR";
+      fala.lang = { en: "en-US", es: "es-ES" }[i18n.language] ?? "pt-BR";
       fala.onend = fala.onerror = () => {
         el.classList.remove("a11y-lendo");
         if (atual.current === el) {

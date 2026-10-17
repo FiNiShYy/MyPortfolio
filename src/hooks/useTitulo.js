@@ -1,10 +1,10 @@
 import { useEffect } from "react";
+import { useTranslation } from "react-i18next";
 
-const PADRAO = "Kauã Gabriel · Desenvolvedor full stack";
-
-// Título da aba por página; sem argumento volta ao título padrão.
+// Título da aba por página; sem argumento usa o título padrão do idioma atual.
 export function useTitulo(titulo) {
+  const { t, i18n } = useTranslation();
   useEffect(() => {
-    document.title = titulo ? `${titulo} · Kauã Gabriel` : PADRAO;
-  }, [titulo]);
+    document.title = titulo ? `${titulo} · Kauã Gabriel` : t("tituloPadrao");
+  }, [titulo, t, i18n.language]);
 }

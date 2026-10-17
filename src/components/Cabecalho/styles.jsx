@@ -13,15 +13,24 @@ export const Container = styled.header`
   gap: 2rem;
   height: 4.25rem;
   padding: 0 var(--cap);
-  background: color-mix(in oklch, var(--fundo) 82%, transparent);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
   border-bottom: 1px solid transparent;
-  transition: border-color 0.25s ease;
+  background-color: transparent;
+  /* blur(0) em vez de none para o desfoque também animar. */
+  backdrop-filter: blur(0);
+  -webkit-backdrop-filter: blur(0);
+  transition:
+    border-color 0.5s ease,
+    background-color 0.5s ease,
+    backdrop-filter 0.5s ease,
+    -webkit-backdrop-filter 0.5s ease;
 
+  /* No topo fica transparente e se funde ao fundo do hero; ao rolar ganha fundo. */
   ${(p) =>
     p.$rolou &&
     css`
+      background-color: color-mix(in oklch, var(--fundo) 82%, transparent);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
       border-bottom-color: var(--borda);
     `}
 `;
@@ -121,6 +130,20 @@ export const BotaoIcone = styled.button`
   &:hover {
     color: var(--texto);
     background: var(--tinta);
+  }
+`;
+
+// Seletor nativo com cara de BotaoIcone; a lista aberta é a do sistema.
+export const SeletorIdioma = styled(BotaoIcone).attrs({ as: "select" })`
+  appearance: none;
+  background: transparent;
+  border: 0;
+  text-align: center;
+  cursor: pointer;
+
+  option {
+    color: var(--texto);
+    background: var(--fundo);
   }
 `;
 
