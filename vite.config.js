@@ -6,6 +6,7 @@ import path from "node:path";
 const SITE = "https://cabeludo.dev";
 const PAGINAS = ["/", "/blog", "/bastidores"];
 const dataBuild = new Date().toISOString();
+const versao = JSON.parse(fs.readFileSync("package.json", "utf8")).version;
 
 // Números da página Bastidores, calculados a cada build para nunca envelhecer.
 function estatisticasDoRepo() {
@@ -66,5 +67,7 @@ export default defineConfig({
     // Data do build, mostrada no rodapé como "última atualização".
     __ULTIMA_ATUALIZACAO__: JSON.stringify(dataBuild),
     __ESTATISTICAS__: JSON.stringify(estatisticasDoRepo()),
+    // Versão do package.json, mostrada no rodapé. Suba a versão a cada mudança visível.
+    __VERSAO__: JSON.stringify(versao),
   },
 });

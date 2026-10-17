@@ -352,7 +352,7 @@
     "sub": "People from very different fields with one thing in common: when I watch their work, I understand where I want to get one day.",
     "itens": {
       "ana": {
-        "papel": "My mom · Physical Education and Law",
+        "papel": "My mom · Military Police officer, Physical Education and Law",
         "texto": "She pushes me to my limits and helps me go beyond them. I certainly wouldn't be who I am without her."
       },
       "kerber": {
@@ -412,11 +412,21 @@
         "tag": "3D printing",
         "titulo": "3D printing",
         "texto": "Model, slice, tweak and print again: a trial-and-error loop that feels a lot like debugging."
+      },
+      "carros": {
+        "tag": "garage",
+        "titulo": "Cars",
+        "texto": "I love doing maintenance and mods on my cars myself. My biggest feat so far was replacing a head gasket at home, together with my girlfriend. Cars are a passion I found as a kid and explore a lot now as an \"adult\"."
+      },
+      "karate": {
+        "tag": "karate",
+        "titulo": "Karate",
+        "texto": "I started because my mom insisted I try different sports. I'll admit I didn't like the first classes, but as I improved, my interest grew until it became part of who I am."
       }
     },
     "ilustracao": {
       "alt": "Illustration of Kauã at the computer, surrounded by code windows and an error message, with a grey cat next to the desk",
-      "legenda": "Self-portrait: me, an error on screen and the cat supervising."
+      "legenda": "Self-portrait: me, cat and errors."
     }
   },
   "blog": {
